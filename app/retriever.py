@@ -49,7 +49,7 @@ class LegalCaseRetriever:
         ):
             retrieved.append({
                 'rank': i + 1,
-                'relevance_score': 1 - distance,
+                'relevance_score': 1 / (1 + distance),
                 'text': doc,
                 'source_file': metadata['source_file'],
                 'chunk_id': metadata['chunk_id'],
