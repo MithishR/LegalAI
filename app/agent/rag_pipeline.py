@@ -144,30 +144,31 @@ class RAGPipeline:
             if not mentioned_case_names:  # Only print if not already printed
                 print(f"Detected citation: {', '.join([parse_canlii_citation(c.replace('.txt', '')) for c in mentioned_case_files])}")
             
-            print("Retrieving chunks from mentioned case(s)...")
+            print("Retrieving all chunks from mentioned case(s)...")
             
-            # Get all chunks
-            all_chunks = self.retriever.retrieve(query, top_k=top_k * 2)
-            
-            # Prioritize chunks from mentioned cases
-            priority_chunks = [
-                chunk for chunk in all_chunks
-                if chunk['source_file'] in mentioned_case_files
-            ]
-            
-            # Add other relevant chunks to fill remaining slots
-            other_chunks = [
-                chunk for chunk in all_chunks
-                if chunk['source_file'] not in mentioned_case_files
-            ]
-            
-            # Combine: prioritize mentioned case chunks
-            chunks = priority_chunks[:top_k] + other_chunks[:max(0, top_k - len(priority_chunks))]
+            # Get ALL chunks from the mentioned case files (not just top-k)
+            priority_chunks = self.retriever.retrieve_by_source(mentioned_case_files)
             
             if priority_chunks:
-                print(f"Found {len(priority_chunks)} chunks from mentioned case(s)")
+                print(f"Retrieved {len(priority_chunks)} chunks from mentioned case(s)")
+                
+                # Get additional context from semantically similar chunks in other cases
+                if len(priority_chunks) < top_k:
+                    print(f"Retrieving {top_k - len(priority_chunks)} additional context chunks...")
+                    other_chunks = self.retriever.retrieve(query, top_k=top_k)
+                    # Filter out chunks from mentioned cases
+                    other_chunks = [
+                        chunk for chunk in other_chunks
+                        if chunk['source_file'] not in mentioned_case_files
+                    ]
+                    # Combine: prioritize mentioned case chunks, then add other context
+                    chunks = priority_chunks + other_chunks[:top_k - len(priority_chunks)]
+                else:
+                    # Use only chunks from mentioned case(s)
+                    chunks = priority_chunks
             else:
                 print(f"Warning: No chunks found from mentioned case(s), using general retrieval")
+                chunks = self.retriever.retrieve(query, top_k=top_k)
         else:
             # Normal retrieval
             chunks = self.retriever.retrieve(query, top_k=top_k)

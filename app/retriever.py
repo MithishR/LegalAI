@@ -59,6 +59,32 @@ class LegalCaseRetriever:
         
         return retrieved
     
+    def retrieve_by_source(self, source_files: List[str]) -> List[Dict]:
+        all_chunks = []
+        
+        for source_file in source_files:
+            results = self.collection.get(
+                where={"source_file": source_file},
+                include=['documents', 'metadatas']
+            )
+            
+            if results['documents']:
+                for doc, metadata in zip(results['documents'], results['metadatas']):
+                    all_chunks.append({
+                        'rank': 0,  # Not ranked by relevance
+                        'relevance_score': 1.0,  # Max score for exact file match
+                        'text': doc,
+                        'source_file': metadata['source_file'],
+                        'chunk_id': metadata['chunk_id'],
+                        'token_count': metadata['token_count'],
+                        'distance': 0.0
+                    })
+        
+        # Sort by source_file then chunk_id for consistent ordering
+        all_chunks.sort(key=lambda x: (x['source_file'], x['chunk_id']))
+        
+        return all_chunks
+    
     def display_results(self, results: List[Dict], show_full_text: bool = False):
 
         for result in results:
