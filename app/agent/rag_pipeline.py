@@ -282,17 +282,12 @@ If the context doesn't contain sufficient information to answer completely, ackn
         """Complete RAG pipeline: retrieve, filter, and build grounded prompt."""
         print(f"\nRetrieving relevant case law for: \"{query}\"")
         retrieved_chunks = self.retrieve_and_filter(query, top_k=top_k)
-        print(f"Found {len(retrieved_chunks)} relevant chunks")
         
-        print(f"Fitting context within {self.max_context_tokens} token budget")
         selected_chunks = self.fit_context_budget(retrieved_chunks)
         total_tokens = sum(chunk['token_count'] for chunk in selected_chunks)
-        print(f"Selected {len(selected_chunks)} chunks ({total_tokens} tokens)")
         
-        print("Building grounded context")
         context_string = self.build_context_string(selected_chunks, include_metadata)
         
-        print("Constructing grounded prompt")
         prompts = self.build_grounded_prompt(query, context_string, custom_system_prompt)
         
         sources = [chunk['source_file'] for chunk in selected_chunks]
@@ -304,7 +299,6 @@ If the context doesn't contain sufficient information to answer completely, ackn
             total_tokens=total_tokens
         )
         
-        print(f"Pipeline complete")
         print(f"Sources: {context.get_source_citations()}")
         
         return {
@@ -337,7 +331,6 @@ If the context doesn't contain sufficient information to answer completely, ackn
             result['llm_response'] = llm_result['response']
             result['llm_tokens'] = llm_result['tokens_used']
             result['llm_model'] = llm_result['model']
-            print(f"Answer generated ({llm_result['tokens_used']['completion']} tokens)")
         
         return result
     
@@ -393,6 +386,7 @@ def main():
     
     print("\nLegal AI")
     print("Ask questions about Canadian case law.")
+    print("LegalAI is for research purposes only. NOT legal advice. Some recent cases may be incomplete.")
     print("Commands: 'quit' or 'exit' to stop, 'summary' to see details\n")
     
     last_result = None
