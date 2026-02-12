@@ -1,7 +1,7 @@
 # Local data
 app/data/case-pdfs/
 app/data/raw-case-txts/
-
+app/data/vector-db
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
