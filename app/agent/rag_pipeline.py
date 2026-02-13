@@ -49,13 +49,17 @@ def extract_case_citations_from_query(query: str) -> List[str]:
 
 
 def extract_case_names_from_query(query: str) -> List[str]:
-    # Pattern: R. v. [Name] or R v [Name] or R. v [Name]
-    pattern = r'R\.?\s*v\.?\s+([A-Z][a-zA-Z]+(?:\s+(?:and|et)\s+[A-Z][a-zA-Z]+)?)'
-    matches = re.findall(pattern, query)
-    
-    case_names = []
-    for name in matches:
-        case_names.append(f"R. v. {name}")
+    """Extract case names from query, handling both criminal (R. v.) and civil (X v. Y) cases."""
+    case_names = []    
+    pattern1 = r'R\.?\s*v\.?\s+([A-Z][a-zA-Z]+(?:\s+(?:and|et)\s+[A-Z][a-zA-Z]+)?)'
+    matches1 = re.findall(pattern1, query)
+    for name in matches1:
+        case_names.append(f"R. v. {name}")    
+    pattern2 = r'([A-Z][a-zA-Z]+(?:\s+[a-zA-ZÀ-ÿ]+){1,10})\s+v[s]?\.?\s+([A-Z][a-zA-Z]+(?:\s+[a-zA-ZÀ-ÿ]+){0,10})'
+    matches2 = re.findall(pattern2, query, re.IGNORECASE)
+    for party1, party2 in matches2:
+        if not party1.strip().upper().startswith('R'):
+            case_names.append(f"{party1.strip()} v. {party2.strip()}")
     
     return case_names
 
@@ -108,28 +112,27 @@ class RAGPipeline:
         self.llm_provider = llm_provider
         self.max_context_tokens = max_context_tokens
         self.min_relevance_score = min_relevance_score
+        self.conversation_history = []  # List of {'question': str, 'answer': str}
+    
+    def clear_conversation(self):
+        """Clear conversation history."""
+        self.conversation_history = []
+        print("Conversation history cleared.")
     
     def retrieve_and_filter(self, query: str, top_k: int = 10) -> List[Dict]:
         """Retrieve relevant chunks and filter by relevance threshold."""
-        # Check if query mentions specific case citations (e.g., "2025 CanLII 125773")
         mentioned_case_files = extract_case_citations_from_query(query)
-        
-        # Check if query mentions case names (e.g., "R. v. Vrbanic")
         mentioned_case_names = extract_case_names_from_query(query)
-        
-        # If case names detected, search for files containing those names
         if mentioned_case_names:
             print(f"Detected case name: {', '.join(mentioned_case_names)}")
-            # Retrieve more chunks to search through
             all_chunks = self.retriever.retrieve(query, top_k=top_k * 3)
-            
-            # Find which files contain the mentioned case names
             matching_files = set()
             for chunk in all_chunks:
                 chunk_text = chunk['text']
+                normalized_chunk = ' '.join(chunk_text.lower().split())
                 for case_name in mentioned_case_names:
-                    # Check if case name appears in chunk text (case-insensitive)
-                    if case_name.lower() in chunk_text.lower():
+                    normalized_case_name = ' '.join(case_name.lower().split())
+                    if normalized_case_name in normalized_chunk:
                         matching_files.add(chunk['source_file'])
                         break
             
@@ -139,41 +142,33 @@ class RAGPipeline:
             else:
                 print(f"Warning: Could not locate '{', '.join(mentioned_case_names)}' in vector database")
         
-        # If we have identified case files (either by citation or name)
         if mentioned_case_files:
-            if not mentioned_case_names:  # Only print if not already printed
+            if not mentioned_case_names:  
                 print(f"Detected citation: {', '.join([parse_canlii_citation(c.replace('.txt', '')) for c in mentioned_case_files])}")
             
-            print("Retrieving all chunks from mentioned case(s)...")
-            
-            # Get ALL chunks from the mentioned case files (not just top-k)
+            print("Retrieving all chunks from mentioned case(s)...")            
             priority_chunks = self.retriever.retrieve_by_source(mentioned_case_files)
             
             if priority_chunks:
-                print(f"Retrieved {len(priority_chunks)} chunks from mentioned case(s)")
-                
-                # Get additional context from semantically similar chunks in other cases
+                print(f"Retrieved {len(priority_chunks)} chunks from mentioned case(s)")                
+                header_chunks = [c for c in priority_chunks if c['chunk_id'] <= 2]
+                other_chunks = [c for c in priority_chunks if c['chunk_id'] > 2]
+                priority_chunks = header_chunks + other_chunks
                 if len(priority_chunks) < top_k:
                     print(f"Retrieving {top_k - len(priority_chunks)} additional context chunks...")
                     other_chunks = self.retriever.retrieve(query, top_k=top_k)
-                    # Filter out chunks from mentioned cases
                     other_chunks = [
                         chunk for chunk in other_chunks
                         if chunk['source_file'] not in mentioned_case_files
                     ]
-                    # Combine: prioritize mentioned case chunks, then add other context
                     chunks = priority_chunks + other_chunks[:top_k - len(priority_chunks)]
                 else:
-                    # Use only chunks from mentioned case(s)
                     chunks = priority_chunks
             else:
                 print(f"Warning: No chunks found from mentioned case(s), using general retrieval")
                 chunks = self.retriever.retrieve(query, top_k=top_k)
         else:
-            # Normal retrieval
-            chunks = self.retriever.retrieve(query, top_k=top_k)
-        
-        # Filter by relevance threshold
+            chunks = self.retriever.retrieve(query, top_k=top_k)        
         filtered_chunks = [
             chunk for chunk in chunks 
             if chunk['relevance_score'] >= self.min_relevance_score
@@ -233,38 +228,63 @@ class RAGPipeline:
         context: str,
         system_instructions: Optional[str] = None
     ) -> Dict[str, str]:
-        """Build a grounded prompt with retrieved context."""
+        """Build a grounded prompt with retrieved context and conversation history."""
         if system_instructions is None:
             system_instructions = """
 You are a legal assistant specializing in Canadian case law analysis.
 
 Your role:
-- Answer legal questions using ONLY the provided case excerpts.
+- Answer ALL types of questions about cases using ONLY the provided case excerpts.
+- Handle both FACTUAL questions (parties, judges, facts, dates, procedural history, outcomes) and LEGAL ANALYSIS questions (holdings, reasoning, legal tests, precedents).
+- Maintain conversation context - reference previous questions and answers when relevant.
 - Do not rely on external knowledge.
-- Do not fabricate case details, holdings, or citations.
-- Clearly distinguish between what the case explicitly states and reasonable inferences drawn from the text.
-- Acknowledge when the provided excerpts are insufficient to fully answer the question.
+- Do not fabricate any information.
+
+For factual questions (who, what, when, where, outcome):
+- Extract specific information: party names, judges, dates, facts, procedural history, and decisions.
+- Look for party names in case headers (Appellant, Respondent, Plaintiff, Defendant, Crown, etc.).
+- Quote exact names and details from the case text.
+- State what the case was about in clear, factual terms.
+
+For legal analysis questions (why, how, legal test, standard):
+- Explain the court's reasoning and legal principles.
+- Identify relevant legal tests, standards, or frameworks applied.
+- Distinguish between holdings, dicta, and analysis.
+- Quote or paraphrase relevant passages.
+
+For follow-up questions:
+- Reference information from the conversation history when appropriate.
+- Use pronouns like "that case" or "the defendant" when context is clear.
+- Maintain continuity across the conversation.
 
 Guidelines:
 - Base your answer strictly on the provided context.
-- Quote or paraphrase relevant passages where appropriate.
 - Cite cases using their proper CanLII citation format shown in the context headers.
-- If the answer cannot be determined from the excerpts, state:
-  "The answer cannot be determined from the provided case excerpts."
+- If specific information cannot be found in the excerpts, state clearly:
+  "This information is not available in the provided case excerpts."
+- Be precise, direct, and avoid speculation.
   """
+        conversation_context = ""
+        if self.conversation_history:
+            conversation_context = "**CONVERSATION HISTORY:**\n"
+            for i, turn in enumerate(self.conversation_history[-5:], 1):  # Last 5 turns
+                conversation_context += f"\nQ{i}: {turn['question']}\n"
+                conversation_context += f"A{i}: {turn['answer']}\n"
+            conversation_context += "\n---\n\n"
 
-        user_prompt = f"""**RELEVANT CASE LAW CONTEXT:**
+        user_prompt = f"""{conversation_context}**RELEVANT CASE LAW CONTEXT:**
 
 {context}
 
 ---
 
-**USER QUESTION:**
+**CURRENT QUESTION:**
 {query}
 
 **INSTRUCTIONS:**
-Answer the question using ONLY the case law context provided above. 
-Cite cases using their proper CanLII citation format as shown in/ the context headers.
+Answer the current question using the case law context provided above.
+If this is a follow-up question, reference the conversation history as needed.
+Cite cases using their proper CanLII citation format as shown in the context headers.
 If the context doesn't contain sufficient information to answer completely, acknowledge this."""
 
         return {
@@ -330,7 +350,11 @@ If the context doesn't contain sufficient information to answer completely, ackn
         else:
             result['llm_response'] = llm_result['response']
             result['llm_tokens'] = llm_result['tokens_used']
-            result['llm_model'] = llm_result['model']
+            result['llm_model'] = llm_result['model']            
+            self.conversation_history.append({
+                'question': query,
+                'answer': result['llm_response']
+            })
         
         return result
     
@@ -387,7 +411,7 @@ def main():
     print("\nLegal AI")
     print("Ask questions about Canadian case law.")
     print("LegalAI is for research purposes only. NOT legal advice. Some recent cases may be incomplete.")
-    print("Commands: 'quit' or 'exit' to stop, 'summary' to see details\n")
+    print("Commands: 'quit' or 'exit' to stop, 'summary' to see details, 'clear' to reset conversation\n")
     
     last_result = None
     
@@ -401,6 +425,10 @@ def main():
             if query.lower() in ['quit', 'exit', 'q']:
                 print("\nGoodbye!")
                 break
+            
+            if query.lower() in ['clear', 'reset']:
+                rag.clear_conversation()
+                continue
             
             if query.lower() == 'summary' and last_result:
                 print(rag.get_pipeline_summary(last_result))
