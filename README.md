@@ -70,62 +70,6 @@ python app/agent/rag_pipeline.py
 - Citation detection: "2025 SCC 38" → prioritizes that specific case
 - General queries: Semantic search across all cases
 
-### Data Ingestion Pipeline
-
-#### 1. Extract PDF Text
-Place PDF files in `app/data/case-pdfs/`:
-```bash
-python scripts/extract_pdf_text.py
-```
-Output: `app/data/raw-case-txts/*.txt`
-
-#### 2. Chunk Text
-Split text into 1000-token chunks with 100-token overlap:
-```bash
-python scripts/chunk_texts.py
-```
-Output: `app/data/chunked-cases/*_chunks.json`
-
-#### 3. Generate Embeddings
-Create vector embeddings and store in ChromaDB:
-```bash
-python scripts/generate_embeddings.py
-```
- Output: `app/data/vector-db/`
-
-**Note**: Steps 1-3 must be run sequentially when adding new cases.
-
-## Technical Details
-
-### Chunking Algorithm
-- **Strategy**: Sliding window with overlap
-- **Chunk size**: 1000 tokens (cl100k_base encoding)
-- **Overlap**: 100 tokens between consecutive chunks
-- **Purpose**: Preserve context across chunk boundaries
-
-### Embedding & Retrieval
-- **Model**: `text-embedding-3-small` (1536 dimensions)
-- **Distance metric**: Euclidean distance
-- **Relevance score**: `1 / (1 + distance)` (0-1 range, higher = better)
-- **Min threshold**: 0.3 relevance score
-- **Indexing**: HNSW (Hierarchical Navigable Small World)
-
-### Case-Specific Retrieval
-When a query mentions a specific case (by name or citation):
-1. **Detect citation**: Regex patterns for "R. v. [Name]" or "YYYY SCC/CanLII NN"
-2. **Retrieve all chunks**: Get ALL chunks from that case file (not just top-k)
-3. **Prioritize**: Place case-specific chunks first
-4. **Context addition**: Fill remaining slots with semantically similar chunks
-
-### Context Management
-- **Max tokens**: 4000 (configurable)
-- **Budget fitting**: Greedy algorithm, prioritizes highest relevance
-- **Metadata**: Each chunk includes source file, citation, chunk ID, and relevance score
-
-### CanLII Citation Format
-Filenames are automatically converted to proper legal citations:
-- `2025scc38.txt` → "2025 SCC 38 (CanLII)"
-- `2025canlii125773.txt` → "2025 CanLII 125773"
 
 ## Example Output
 
@@ -183,16 +127,6 @@ Model: gpt-4o-mini-2024-07-18 | Tokens: 4207
 
 ### Attribution
 All cases sourced from [CanLII.org](https://www.canlii.org/) - Canadian Legal Information Institute.
-
-
-
-
-## Acknowledgments
-
-- **CanLII** for providing free access to Canadian case law
-- **OpenAI** for embedding and LLM APIs
-- **ChromaDB** for vector database infrastructure
-
 ---
 
 **Disclaimer**: This tool is for research and educational purposes only. It does not constitute legal advice. Always consult a qualified legal professional for legal matters.
