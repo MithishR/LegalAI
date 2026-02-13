@@ -11,7 +11,7 @@ from dataclasses import dataclass
 # Add parent directory to path for imports
 sys.path.append(str(Path(__file__).parent.parent))
 
-from retriever import LegalCaseRetriever
+from retrieval.retriever import LegalCaseRetriever
 from models.llm_provider import LLMProvider
 import re
 
@@ -264,7 +264,7 @@ Guidelines:
 
 **INSTRUCTIONS:**
 Answer the question using ONLY the case law context provided above. 
-Cite cases using their proper CanLII citation format as shown in the context headers.
+Cite cases using their proper CanLII citation format as shown in/ the context headers.
 If the context doesn't contain sufficient information to answer completely, acknowledge this."""
 
         return {
