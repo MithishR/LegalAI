@@ -105,14 +105,18 @@ class RAGPipeline:
         retriever: LegalCaseRetriever,
         llm_provider: Optional[LLMProvider] = None,
         max_context_tokens: int = 4000,
-        min_relevance_score: float = 0.3
+        min_relevance_score: float = 0.3,
+        retrieval_method: str = 'hybrid',
+        hybrid_alpha: float = 0.5
     ):
 
         self.retriever = retriever
         self.llm_provider = llm_provider
         self.max_context_tokens = max_context_tokens
         self.min_relevance_score = min_relevance_score
-        self.conversation_history = []  # List of {'question': str, 'answer': str}
+        self.retrieval_method = retrieval_method  
+        self.hybrid_alpha = hybrid_alpha  
+        self.conversation_history = []  
     
     def clear_conversation(self):
         """Clear conversation history."""
@@ -125,7 +129,12 @@ class RAGPipeline:
         mentioned_case_names = extract_case_names_from_query(query)
         if mentioned_case_names:
             print(f"Detected case name: {', '.join(mentioned_case_names)}")
-            all_chunks = self.retriever.retrieve(query, top_k=top_k * 3)
+            all_chunks = self.retriever.retrieve(
+                query, 
+                top_k=top_k * 3, 
+                method=self.retrieval_method, 
+                alpha=self.hybrid_alpha
+            )
             matching_files = set()
             for chunk in all_chunks:
                 chunk_text = chunk['text']
@@ -156,7 +165,12 @@ class RAGPipeline:
                 priority_chunks = header_chunks + other_chunks
                 if len(priority_chunks) < top_k:
                     print(f"Retrieving {top_k - len(priority_chunks)} additional context chunks...")
-                    other_chunks = self.retriever.retrieve(query, top_k=top_k)
+                    other_chunks = self.retriever.retrieve(
+                        query, 
+                        top_k=top_k, 
+                        method=self.retrieval_method, 
+                        alpha=self.hybrid_alpha
+                    )
                     other_chunks = [
                         chunk for chunk in other_chunks
                         if chunk['source_file'] not in mentioned_case_files
@@ -166,9 +180,19 @@ class RAGPipeline:
                     chunks = priority_chunks
             else:
                 print(f"Warning: No chunks found from mentioned case(s), using general retrieval")
-                chunks = self.retriever.retrieve(query, top_k=top_k)
+                chunks = self.retriever.retrieve(
+                    query, 
+                    top_k=top_k, 
+                    method=self.retrieval_method, 
+                    alpha=self.hybrid_alpha
+                )
         else:
-            chunks = self.retriever.retrieve(query, top_k=top_k)        
+            chunks = self.retriever.retrieve(
+                query, 
+                top_k=top_k, 
+                method=self.retrieval_method, 
+                alpha=self.hybrid_alpha
+            )        
         filtered_chunks = [
             chunk for chunk in chunks 
             if chunk['relevance_score'] >= self.min_relevance_score
@@ -405,13 +429,15 @@ def main():
         retriever=retriever,
         llm_provider=llm_provider,
         max_context_tokens=4000,
-        min_relevance_score=0.3
+        min_relevance_score=0.3,
+        retrieval_method='hybrid',  # Options: 'vector', 'bm25', 'hybrid'
+        hybrid_alpha=0.5  # 0.0 = BM25 only, 1.0 = vector only, 0.5 = balanced
     )
     
     print("\nLegal AI")
     print("Ask questions about Canadian case law.")
     print("LegalAI is for research purposes only. NOT legal advice. Some recent cases may be incomplete.")
-    print("Commands: 'quit' or 'exit' to stop, 'summary' to see details, 'clear' to reset conversation\n")
+    print("Commands: 'quit' or 'exit' to stop, 'summary' to see details, 'clear' to clear screen, 'reset' to reset conversation\n")
     
     last_result = None
     
@@ -426,7 +452,11 @@ def main():
                 print("\nGoodbye!")
                 break
             
-            if query.lower() in ['clear', 'reset']:
+            if query.lower() == 'clear':
+                os.system('clear' if os.name == 'posix' else 'cls')
+                continue
+            
+            if query.lower() == 'reset':
                 rag.clear_conversation()
                 continue
             
