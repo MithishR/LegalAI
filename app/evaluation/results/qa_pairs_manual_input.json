@@ -1,0 +1,25 @@
+[
+  {
+    "question": "Who is the appellant in the case R. v. Wolfe?",
+    "answer": "Braydon Wolfe",
+    "keywords": [
+      "Braydon Wolfe",
+      "appellant",
+      "R. v. Wolfe"
+    ],
+    "source_file": "manual_input",
+    "chunk_id": 0
+  },
+  {
+    "question": "What was the outcome of the appeal in R. v. Wolfe?",
+    "answer": "The appeal should be allowed.",
+    "keywords": [
+      "outcome",
+      "appeal",
+      "allowed",
+      "R. v. Wolfe"
+    ],
+    "source_file": "manual_input",
+    "chunk_id": 0
+  }
+]

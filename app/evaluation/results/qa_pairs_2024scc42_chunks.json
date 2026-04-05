@@ -1,0 +1,35 @@
+[
+  {
+    "question": "Who was the appellant in the case R. v. Campbell?",
+    "answer": "Dwayne Alexander Campbell",
+    "keywords": [
+      "appellant",
+      "Dwayne Alexander Campbell",
+      "R. v. Campbell"
+    ],
+    "source_file": "2024scc42.txt",
+    "chunk_id": 0
+  },
+  {
+    "question": "What was the date when the judgment in R. v. Campbell was rendered?",
+    "answer": "December 6, 2024",
+    "keywords": [
+      "judgment",
+      "December 6, 2024",
+      "R. v. Campbell"
+    ],
+    "source_file": "2024scc42.txt",
+    "chunk_id": 0
+  },
+  {
+    "question": "Which legal issue was central to the appeal in R. v. Campbell?",
+    "answer": "Reasonable expectation of privacy in text message conversation",
+    "keywords": [
+      "legal issue",
+      "reasonable expectation of privacy",
+      "text message conversation"
+    ],
+    "source_file": "2024scc42.txt",
+    "chunk_id": 0
+  }
+]
