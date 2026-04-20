@@ -1,0 +1,2055 @@
+{
+  "timestamp": "2026-04-05T02:04:23.422577Z",
+  "total_questions": 90,
+  "top_k": 10,
+  "source_correct": 64,
+  "source_accuracy_pct": 71.11,
+  "keyword_eligible": 90,
+  "keyword_correct": 35,
+  "keyword_accuracy_pct": 38.89,
+  "per_question": [
+    {
+      "id": 1,
+      "question": "What was the outcome of the appeal by the Canadian Broadcasting Corporation?",
+      "expected_source": "2023canlii96444.txt",
+      "expected_answer": "The appeal should be dismissed.",
+      "keywords": [
+        "appeal",
+        "Canadian Broadcasting Corporation",
+        "dismissed"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The outcome of the appeal by the Canadian Broadcasting Corporation (CBC) was that the appeal was dismissed without costs. The Supreme Court of Canada held that the Court of Appeal did not make a reversible error in issuing the publication ban or in ordering that it remain in effect (2023 SCC 27).",
+      "keyword_match": true,
+      "keywords_found": [
+        "appeal",
+        "Canadian Broadcasting Corporation",
+        "dismissed"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 2,
+      "question": "Who were the respondents in the case?",
+      "expected_source": "2023canlii96444.txt",
+      "expected_answer": "His Majesty The King, B.B., spouse of the late M.D., and J.D., in his capacity as executor of the estate of the late M.D.",
+      "keywords": [
+        "respondents",
+        "His Majesty The King",
+        "B.B.",
+        "J.D."
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "The respondents in the case were Mr. Beaulne and Mr. Rh\u00e9aume. They filed a motion to institute proceedings for damages in the Superior Court, claiming approximately $24 million as compensation for the gain they would have made through a transaction involving Groupe Excellence, which they alleged they were deprived of due to the actions of the appellants (2023 SCC 25 (CanLII)).",
+      "keyword_match": false,
+      "keywords_found": [
+        "respondents"
+      ],
+      "keywords_missing": [
+        "His Majesty The King",
+        "B.B.",
+        "J.D."
+      ]
+    },
+    {
+      "id": 3,
+      "question": "On what date was the judgment rendered?",
+      "expected_source": "2023canlii96444.txt",
+      "expected_answer": "November 9, 2023.",
+      "keywords": [
+        "judgment",
+        "rendered",
+        "November 9, 2023"
+      ],
+      "source_match": true,
+      "source_rank": 4,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts do not specify the date on which the judgment was rendered in the case 2025 SCC 44 (CanLII).",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment",
+        "rendered"
+      ],
+      "keywords_missing": [
+        "November 9, 2023"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What was the date when the appeal was heard?",
+      "expected_source": "2023scc25.txt",
+      "expected_answer": "January 12, 2023",
+      "keywords": [
+        "appeal",
+        "heard",
+        "January 12, 2023"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts.",
+      "keyword_match": false,
+      "keywords_found": [],
+      "keywords_missing": [
+        "appeal",
+        "heard",
+        "January 12, 2023"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Who were the appellants in the case?",
+      "expected_source": "2023scc25.txt",
+      "expected_answer": "Antoine Ponce and Daniel Riopel",
+      "keywords": [
+        "appellants",
+        "Antoine Ponce",
+        "Daniel Riopel"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The appellants in the case 2023 SCC 29 (CanLII) were four British Columbia residents who were alleged to have contravened the Quebec Securities Act by participating in a transnational \"pump-and-dump\" securities manipulation scheme with links to Quebec. Their names are not specified in the provided excerpts.",
+      "keyword_match": false,
+      "keywords_found": [
+        "appellants"
+      ],
+      "keywords_missing": [
+        "Antoine Ponce",
+        "Daniel Riopel"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What was the amount ordered by the Superior Court to be paid to the shareholders?",
+      "expected_source": "2023scc25.txt",
+      "expected_answer": "$11,884,743",
+      "keywords": [
+        "Superior Court",
+        "ordered",
+        "$11,884,743"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The Superior Court ordered the appellants to pay the shareholders a total amount of $11,884,743, which was equal to the profits earned by the appellants on the resale of Groupe Excellence (2023 SCC 25 (CanLII)).",
+      "keyword_match": true,
+      "keywords_found": [
+        "Superior Court",
+        "ordered",
+        "$11,884,743"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 7,
+      "question": "What was the date of the judgment rendered in R. v. Bertrand Marchand?",
+      "expected_source": "2023scc26.txt",
+      "expected_answer": "November 3, 2023",
+      "keywords": [
+        "judgment",
+        "date",
+        "November 3, 2023"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The judgment in R. v. Bertrand Marchand was rendered on November 3, 2023. This information is found in the case excerpts provided. \n\n**Citation:** 2023 SCC 26 (CanLII)",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment",
+        "November 3, 2023"
+      ],
+      "keywords_missing": [
+        "date"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Who were the appellants in the case R. v. Bertrand Marchand?",
+      "expected_source": "2023scc26.txt",
+      "expected_answer": "His Majesty The King and Attorney General of Quebec",
+      "keywords": [
+        "appellants",
+        "His Majesty The King",
+        "Attorney General of Quebec"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The appellants in the case R. v. Bertrand Marchand were His Majesty The King and the Attorney General of Quebec. This information is found in the case header of the provided excerpts. \n\n**Citation:** 2023 SCC 26 (CanLII)",
+      "keyword_match": true,
+      "keywords_found": [
+        "appellants",
+        "His Majesty The King",
+        "Attorney General of Quebec"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 9,
+      "question": "What legal issue was addressed regarding mandatory minimum sentences in R. v. Bertrand Marchand?",
+      "expected_source": "2023scc26.txt",
+      "expected_answer": "Whether mandatory minimum sentences constitute cruel and unusual punishment",
+      "keywords": [
+        "mandatory minimum sentences",
+        "cruel and unusual punishment",
+        "legal issue"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The legal issue addressed regarding mandatory minimum sentences in *R. v. Bertrand Marchand*, 2023 SCC 26 (CanLII), was whether the mandatory minimum sentences for child luring, as prescribed in sections 172.1(2)(a) and (b) of the Criminal Code, constitute cruel and unusual punishment under section 12 of the Canadian Charter of Rights and Freedoms.\n\nThe case involved two respondents, M and V, who challenged the constitutionality of the mandatory minimum sentences of one year for indictable offences and six months for summary conviction offences related to child luring. The Supreme Court found that the mandatory minimum sentences were inconsistent with section 12 of the Charter and were not saved by section 1, rendering them of no force or effect under section 52 of the Constitution Act, 1982. \n\nThe court established a two-stage inquiry to determine the constitutionality of the mandatory minimum sentences, which involved assessing whether the mandatory minimum would impose a sentence that is grossly disproportionate to a fit and proportionate sentence for the offenders. In M's case, the court concluded that the fit sentence of 12 months mirrored the one-year mandatory minimum, thus not being grossly disproportionate. However, in V's case, the six-month mandatory minimum was found to be unconstitutional as it could be grossly disproportionate in reasonably foreseeable scenarios.\n\nThis analysis highlighted the need to consider the distinct harms of child luring and the legislative intent behind the mandatory minimum sentences.",
+      "keyword_match": true,
+      "keywords_found": [
+        "mandatory minimum sentences",
+        "cruel and unusual punishment",
+        "legal issue"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 10,
+      "question": "What was the outcome of the appeal in R. v. Greater Sudbury?",
+      "expected_source": "2023scc28.txt",
+      "expected_answer": "The appeal was heard and the judgment was rendered on November 10, 2023.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "judgment",
+        "November 10, 2023"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "In the appeal of R. v. Greater Sudbury, 2023 SCC 28, the outcome was that the appeal was dismissed on an equal division among the justices. The majority, consisting of Wagner C.J. and Martin, Kasirer, and Jamal JJ., agreed with the Court of Appeal that the City was an employer and had breached its duty under s. 25(1)(c) of the Occupational Health and Safety Act. The issue of the City\u2019s due diligence defense was remitted to the provincial offences appeal court for further consideration. \n\nThe dissenting justices, Karakatsanis, Rowe, and O\u2019Bonsawin JJ., would have allowed the appeal, arguing that the courts below did not properly analyze whether the offence was made out and that the matter should be reconsidered by the provincial court.",
+      "keyword_match": false,
+      "keywords_found": [
+        "outcome",
+        "appeal"
+      ],
+      "keywords_missing": [
+        "judgment",
+        "November 10, 2023"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Who were the interveners in the case of R. v. Greater Sudbury?",
+      "expected_source": "2023scc28.txt",
+      "expected_answer": "Retail Council of Canada, Regional Municipality of York, Regional Municipality of Peel, Regional Municipality of Durham, Regional Municipality of Halton, Regional Municipality of Waterloo, Regional Municipality of Niagara, and Workers\u2019 Compensation Board of British Columbia.",
+      "keywords": [
+        "interveners",
+        "Retail Council of Canada",
+        "Regional Municipality",
+        "Workers\u2019 Compensation Board"
+      ],
+      "source_match": true,
+      "source_rank": 5,
+      "llm_answer": "In the case of R. v. Greater Sudbury, the interveners were:\n\n- Retail Council of Canada\n- Regional Municipality of York\n- Regional Municipality of Peel\n- Regional Municipality of Durham\n- Regional Municipality of Halton\n- Regional Municipality of Waterloo\n- Regional Municipality of Niagara\n- Workers\u2019 Compensation Board of British Columbia\n\nThis information is derived from the case excerpts provided.",
+      "keyword_match": true,
+      "keywords_found": [
+        "interveners",
+        "Retail Council of Canada",
+        "Regional Municipality",
+        "Workers\u2019 Compensation Board"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 12,
+      "question": "What was the legal issue at the center of the case involving the City of Greater Sudbury?",
+      "expected_source": "2023scc28.txt",
+      "expected_answer": "Whether the city was liable as an employer for breaching duties under the Occupational Health and Safety Act.",
+      "keywords": [
+        "legal issue",
+        "City of Greater Sudbury",
+        "liable",
+        "Occupational Health and Safety Act"
+      ],
+      "source_match": true,
+      "source_rank": 6,
+      "llm_answer": "The legal issue at the center of the case involving the City of Greater Sudbury, as outlined in the provided excerpts from 2025 SCC 44 (CanLII), revolves around the nature of the City's obligation regarding the excess land received from Larochelle. Specifically, the court needed to determine whether the agreement between the City and Laroda created an obligation with a term or a conditional obligation, and at what point in time that term must be fixed.\n\nThe trial judge initially found that the agreement was a transaction that resulted in novation, extinguishing the City's obligation to return the excess land. However, the Court of Appeal disagreed, concluding that the parties intended to delay the performance of the City's obligation rather than extinguish it. The Court of Appeal held that the obligation was subject to a term, which was indeterminate due to the uncertainty surrounding future cadastral operations necessary for the obligation to become exigible.\n\nAdditionally, the Court of Appeal addressed the remedy to which Laroda was entitled, determining that the applicable regime was restitution of prestations rather than performance by equivalence, and ordered the City to pay Laroda the market value of the land as of December 15, 2015.\n\nThus, the central legal issues included the classification of the City's obligation and the determination of the appropriate remedy for Laroda.",
+      "keyword_match": false,
+      "keywords_found": [
+        "legal issue",
+        "City of Greater Sudbury"
+      ],
+      "keywords_missing": [
+        "liable",
+        "Occupational Health and Safety Act"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "What was the date when the appeal was heard?",
+      "expected_source": "2023scc29.txt",
+      "expected_answer": "January 18, 2023",
+      "keywords": [
+        "appeal",
+        "heard",
+        "January 18",
+        "2023"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts do not specify the date when the appeal was heard for any of the cases mentioned.",
+      "keyword_match": false,
+      "keywords_found": [
+        "appeal",
+        "heard"
+      ],
+      "keywords_missing": [
+        "January 18",
+        "2023"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Who were the appellants in the case involving the Autorit\u00e9 des march\u00e9s financiers?",
+      "expected_source": "2023scc29.txt",
+      "expected_answer": "Frederick Langford Sharp and Shawn Van Damme, Vincenzo Antonio Carnovale, Pasquale Antonio Rocca",
+      "keywords": [
+        "appellants",
+        "Autorit\u00e9 des march\u00e9s financiers",
+        "Frederick Langford Sharp",
+        "Shawn Van Damme",
+        "Vincenzo Antonio Carnovale",
+        "Pasquale Antonio Rocca"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The appellants in the case involving the Autorit\u00e9 des march\u00e9s financiers were Frederick Langford Sharp, Shawn Van Damme, Vincenzo Antonio Carnovale, and Pasquale Antonio Rocca. This information is derived from the case citation: Sharp v. Autorit\u00e9 des march\u00e9s financiers, 2023 SCC 29 (CanLII).",
+      "keyword_match": true,
+      "keywords_found": [
+        "appellants",
+        "Autorit\u00e9 des march\u00e9s financiers",
+        "Frederick Langford Sharp",
+        "Shawn Van Damme",
+        "Vincenzo Antonio Carnovale",
+        "Pasquale Antonio Rocca"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 15,
+      "question": "Which judge did not participate in the final disposition of the judgment?",
+      "expected_source": "2023scc29.txt",
+      "expected_answer": "Brown J.",
+      "keywords": [
+        "judge",
+        "did not participate",
+        "final disposition",
+        "Brown J."
+      ],
+      "source_match": true,
+      "source_rank": 4,
+      "llm_answer": "In the case of Ponce v. Soci\u00e9t\u00e9 d\u2019investissements Rh\u00e9aume lt\u00e9e, 2023 SCC 25, the judge who did not participate in the final disposition of the judgment is Brown J. This information is found in the case excerpt where it states, \"Brown J. did not participate in the final disposition of the judgment.\"",
+      "keyword_match": true,
+      "keywords_found": [
+        "judge",
+        "did not participate",
+        "final disposition",
+        "Brown J."
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 16,
+      "question": "Who was the appellant in the case R. v. Zacharias?",
+      "expected_source": "2023scc30.txt",
+      "expected_answer": "George Zacharias",
+      "keywords": [
+        "appellant",
+        "George Zacharias",
+        "R. v. Zacharias"
+      ],
+      "source_match": true,
+      "source_rank": 2,
+      "llm_answer": "The appellant in the case R. v. Zacharias was George Zacharias. This information is found in the case header of the provided excerpts. \n\n**Citation:** R. v. Zacharias, 2023 SCC 30 (CanLII).",
+      "keyword_match": true,
+      "keywords_found": [
+        "appellant",
+        "George Zacharias",
+        "R. v. Zacharias"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 17,
+      "question": "What was the outcome of the appeal in R. v. Zacharias?",
+      "expected_source": "2023scc30.txt",
+      "expected_answer": "The appeal should be dismissed.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "dismissed"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "In the case of R. v. Zacharias, 2023 SCC 30, the outcome of the appeal was that it should be dismissed. The majority of the Supreme Court, represented by Rowe and O\u2019Bonsawin JJ., held that the arrests and searches incident to arrest following the sniffer dog search and investigative detention constituted breaches of the appellant's rights under sections 8 and 9 of the Charter. However, they determined that these breaches did not warrant the exclusion of evidence under section 24(2) of the Charter. The dissenting opinion by Martin and Kasirer JJ. argued that the appeal should be allowed, emphasizing the significance of the cumulative impact of the Charter breaches.",
+      "keyword_match": true,
+      "keywords_found": [
+        "outcome",
+        "appeal",
+        "dismissed"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 18,
+      "question": "On what date was the judgment in R. v. Zacharias rendered?",
+      "expected_source": "2023scc30.txt",
+      "expected_answer": "December 1, 2023",
+      "keywords": [
+        "judgment",
+        "date",
+        "December 1, 2023"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The judgment in R. v. Zacharias was rendered on December 1, 2023. This information can be found in the case excerpts provided (2023 SCC 30 (CanLII)).",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment",
+        "December 1, 2023"
+      ],
+      "keywords_missing": [
+        "date"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "What was the date when the judgment was rendered?",
+      "expected_source": "2023scc31.txt",
+      "expected_answer": "December 8, 2023",
+      "keywords": [
+        "judgment",
+        "rendered",
+        "December 8, 2023"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts do not specify the date when the judgment was rendered in the case 2025 SCC 44 (CanLII).",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment",
+        "rendered"
+      ],
+      "keywords_missing": [
+        "December 8, 2023"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Who were the appellants in the case?",
+      "expected_source": "2023scc31.txt",
+      "expected_answer": "Commission scolaire francophone des Territoires du Nord -Ouest and A.B.",
+      "keywords": [
+        "appellants",
+        "Commission scolaire francophone",
+        "A.B."
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "The appellants in the case 2023 SCC 29 (CanLII) were four British Columbia residents who were alleged to have contravened the Quebec Securities Act by participating in a transnational \"pump-and-dump\" securities manipulation scheme with links to Quebec. Their names are not specified in the provided excerpts.",
+      "keyword_match": false,
+      "keywords_found": [
+        "appellants"
+      ],
+      "keywords_missing": [
+        "Commission scolaire francophone",
+        "A.B."
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Which judge authored the reasons for judgment?",
+      "expected_source": "2023scc31.txt",
+      "expected_answer": "C\u00f4t\u00e9 J.",
+      "keywords": [
+        "reasons for judgment",
+        "C\u00f4t\u00e9 J."
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "The reasons for judgment in the case 2023 SCC 30 (CanLII) were delivered by Justices Martin and Kasirer. They stated, \"We have had the advantage of reading the reasons of our colleagues Rowe and O\u2019Bonsawin JJ.\" indicating their collaborative approach in the decision-making process.",
+      "keyword_match": false,
+      "keywords_found": [
+        "reasons for judgment"
+      ],
+      "keywords_missing": [
+        "C\u00f4t\u00e9 J."
+      ]
+    },
+    {
+      "id": 22,
+      "question": "What was the outcome of the appeal in R. v. B.E.M.?",
+      "expected_source": "2023scc32.txt",
+      "expected_answer": "The appeal was dismissed.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "dismissed"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "The outcome of the appeal in R. v. B.E.M. (2025 SCC 41) was that the appeal by His Majesty The King was allowed, with Wagner C.J. and Karakatsanis and Moreau JJ. dissenting. The appeal by B.F. was dismissed. This means that the Ontario Court of Appeal's order for a new trial on the charge of attempted murder relating to I.F. was set aside, while the convictions of B.F. for the attempted murder and aggravated assault of E. were affirmed.",
+      "keyword_match": true,
+      "keywords_found": [
+        "outcome",
+        "appeal",
+        "dismissed"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 23,
+      "question": "Who were the judges presiding over the case R. v. B.E.M.?",
+      "expected_source": "2023scc32.txt",
+      "expected_answer": "Karakatsanis, C\u00f4t\u00e9, Martin, Kasirer and Moreau.",
+      "keywords": [
+        "judges",
+        "Karakatsanis",
+        "C\u00f4t\u00e9",
+        "Martin",
+        "Kasirer",
+        "Moreau"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts do not mention the case R. v. B.E.M. or the judges presiding over it.",
+      "keyword_match": false,
+      "keywords_found": [
+        "judges"
+      ],
+      "keywords_missing": [
+        "Karakatsanis",
+        "C\u00f4t\u00e9",
+        "Martin",
+        "Kasirer",
+        "Moreau"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "What legal issue was at the center of the appeal in R. v. B.E.M.?",
+      "expected_source": "2023scc32.txt",
+      "expected_answer": "The appeal concerned the trial judge's failure to instruct the jury to ignore improper submissions made by Crown counsel.",
+      "keywords": [
+        "legal issue",
+        "trial judge",
+        "jury",
+        "improper submissions"
+      ],
+      "source_match": true,
+      "source_rank": 4,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts do not mention the legal issue at the center of the appeal in R. v. B.E.M.",
+      "keyword_match": false,
+      "keywords_found": [
+        "legal issue"
+      ],
+      "keywords_missing": [
+        "trial judge",
+        "jury",
+        "improper submissions"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "What was the outcome of the appeal in R. v. Lindsay?",
+      "expected_source": "2023scc33.txt",
+      "expected_answer": "The appeal was dismissed.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "dismissed"
+      ],
+      "source_match": true,
+      "source_rank": 2,
+      "llm_answer": "The outcome of the appeal in R. v. Lindsay, 2023 SCC 33, was that the appeal was dismissed. The Supreme Court of Canada upheld the conviction of Trevor Ian James Lindsay for aggravated assault, concluding that the trial judge's findings of fact were supported by the evidence and that the legal principles were correctly applied.",
+      "keyword_match": true,
+      "keywords_found": [
+        "outcome",
+        "appeal",
+        "dismissed"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 26,
+      "question": "Who represented the appellant in the case?",
+      "expected_source": "2023scc33.txt",
+      "expected_answer": "Alias Sanders",
+      "keywords": [
+        "appellant",
+        "represented",
+        "Alias Sanders"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "In the case 2023 SCC 26 (CanLII), the appellant, His Majesty The King, was represented by Lina Th\u00e9riault, Nicolas Abran, and Joanny Houde St-Pierre. Additionally, \u00c9ric Bernier and Lina Th\u00e9riault represented the appellant in another appeal (40093), while Alexandre Duval, Michel D\u00e9om, Sylvain Leb\u0153uf, and Julie Dassylva also represented the appellant, the Attorney General of Quebec (39935).",
+      "keyword_match": false,
+      "keywords_found": [
+        "appellant",
+        "represented"
+      ],
+      "keywords_missing": [
+        "Alias Sanders"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Which judges were part of the coram in R. v. Lindsay?",
+      "expected_source": "2023scc33.txt",
+      "expected_answer": "Karakatsanis, Kasirer, Jamal, O\u2019Bonsawin and Moreau",
+      "keywords": [
+        "judges",
+        "coram",
+        "Karakatsanis",
+        "Kasirer",
+        "Jamal"
+      ],
+      "source_match": true,
+      "source_rank": 4,
+      "llm_answer": "The judges who were part of the coram in R. v. Lindsay, 2023 SCC 33, are Karakatsanis, Kasirer, Jamal, O\u2019Bonsawin, and Moreau JJ.",
+      "keyword_match": true,
+      "keywords_found": [
+        "judges",
+        "coram",
+        "Karakatsanis",
+        "Kasirer",
+        "Jamal"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 28,
+      "question": "Who was the appellant in the case R. v. Lawlor?",
+      "expected_source": "2023scc34.txt",
+      "expected_answer": "Derrick Michael Lawlor",
+      "keywords": [
+        "appellant",
+        "Derrick Michael Lawlor",
+        "R. v. Lawlor"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts. The case excerpts only detail the cases of R. v. Lindsay (2023 SCC 33) and R. v. Larocque (2025 SCC 36), but do not mention R. v. Lawlor.",
+      "keyword_match": false,
+      "keywords_found": [
+        "R. v. Lawlor"
+      ],
+      "keywords_missing": [
+        "appellant",
+        "Derrick Michael Lawlor"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "What was the outcome of the appeal in R. v. Lawlor?",
+      "expected_source": "2023scc34.txt",
+      "expected_answer": "Conviction set aside and new trial ordered",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "conviction set aside",
+        "new trial"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts do not mention R. v. Lawlor or its outcome.",
+      "keyword_match": false,
+      "keywords_found": [
+        "outcome"
+      ],
+      "keywords_missing": [
+        "appeal",
+        "conviction set aside",
+        "new trial"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Which judge read the judgment in R. v. Lawlor?",
+      "expected_source": "2023scc34.txt",
+      "expected_answer": "O\u2019Bonsawin J.",
+      "keywords": [
+        "judge",
+        "O\u2019Bonsawin J.",
+        "judgment"
+      ],
+      "source_match": true,
+      "source_rank": 5,
+      "llm_answer": "The judgment in R. v. Lawlor, 2023 SCC 34, was read by Justice O\u2019Bonsawin.",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment"
+      ],
+      "keywords_missing": [
+        "judge",
+        "O\u2019Bonsawin J."
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Who was the appellant in the case R. v. Stevenson?",
+      "expected_source": "2024canlii108265.txt",
+      "expected_answer": "Thomas Stevenson",
+      "keywords": [
+        "appellant",
+        "R. v. Stevenson",
+        "Thomas Stevenson"
+      ],
+      "source_match": true,
+      "source_rank": 6,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts only discuss the case R. v. Lindsay, 2023 SCC 33, and do not mention a case titled R. v. Stevenson.",
+      "keyword_match": false,
+      "keywords_found": [
+        "R. v. Stevenson"
+      ],
+      "keywords_missing": [
+        "appellant",
+        "Thomas Stevenson"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "What was the outcome of the appeal in R. v. Stevenson?",
+      "expected_source": "2024canlii108265.txt",
+      "expected_answer": "The appeal should be dismissed.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "dismissed"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts do not mention a case titled R. v. Stevenson or its outcome.",
+      "keyword_match": false,
+      "keywords_found": [
+        "outcome"
+      ],
+      "keywords_missing": [
+        "appeal",
+        "dismissed"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "On what date was the judgment in R. v. Stevenson rendered?",
+      "expected_source": "2024canlii108265.txt",
+      "expected_answer": "November 8, 2024",
+      "keywords": [
+        "judgment",
+        "date",
+        "November 8, 2024"
+      ],
+      "source_match": true,
+      "source_rank": 6,
+      "llm_answer": "The judgment in R. v. Stevenson was rendered on November 8, 2024.",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment",
+        "November 8, 2024"
+      ],
+      "keywords_missing": [
+        "date"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Who was the appellant in the case R. v. Wolfe?",
+      "expected_source": "2024scc34.txt",
+      "expected_answer": "Braydon Wolfe",
+      "keywords": [
+        "appellant",
+        "R. v. Wolfe",
+        "Braydon Wolfe"
+      ],
+      "source_match": true,
+      "source_rank": 4,
+      "llm_answer": "The appellant in the case R. v. Wolfe was Braydon Wolfe. This information is found in the case header of the provided excerpts: \n\n\"BETWEEN: Braydon Wolfe Appellant and His Majesty The King Respondent\" (2024 SCC 34 (CanLII)).",
+      "keyword_match": true,
+      "keywords_found": [
+        "appellant",
+        "R. v. Wolfe",
+        "Braydon Wolfe"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 35,
+      "question": "What was the outcome of the appeal in R. v. Wolfe?",
+      "expected_source": "2024scc34.txt",
+      "expected_answer": "The appeal should be allowed and the driving prohibition order set aside.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "driving prohibition order"
+      ],
+      "source_match": true,
+      "source_rank": 2,
+      "llm_answer": "In the case of R. v. Wolfe, 2024 SCC 34, the outcome of the appeal was that it should be allowed and the driving prohibition order was set aside. The Supreme Court of Canada held that the driving prohibitions imposed on the accused were unlawful because he was convicted of criminal negligence causing death and criminal negligence causing bodily harm, which are not enumerated offences under section 320.24(4) of the Criminal Code. Therefore, he was not \"found guilty\" of an enumerated offence within the meaning of that provision, and discretionary driving prohibitions were not available as a sentencing option.",
+      "keyword_match": true,
+      "keywords_found": [
+        "outcome",
+        "appeal",
+        "driving prohibition order"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 36,
+      "question": "On what date was the judgment rendered in the case R. v. Wolfe?",
+      "expected_source": "2024scc34.txt",
+      "expected_answer": "October 18, 2024",
+      "keywords": [
+        "judgment rendered",
+        "October 18, 2024",
+        "R. v. Wolfe"
+      ],
+      "source_match": true,
+      "source_rank": 3,
+      "llm_answer": "The judgment in the case R. v. Wolfe was rendered on October 18, 2024. This information is found in the case header of the provided excerpts (2024 SCC 34 (CanLII)).",
+      "keyword_match": false,
+      "keywords_found": [
+        "October 18, 2024",
+        "R. v. Wolfe"
+      ],
+      "keywords_missing": [
+        "judgment rendered"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Who is the appellant in the case R. v. Archambault?",
+      "expected_source": "2024scc35.txt",
+      "expected_answer": "His Majesty The King",
+      "keywords": [
+        "appellant",
+        "R. v. Archambault",
+        "His Majesty The King"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts only contain details about the case R. v. Lindsay, 2023 SCC 33, and do not mention a case titled R. v. Archambault.",
+      "keyword_match": false,
+      "keywords_found": [
+        "R. v. Archambault"
+      ],
+      "keywords_missing": [
+        "appellant",
+        "His Majesty The King"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "What was the date when the judgment in R. v. Archambault was rendered?",
+      "expected_source": "2024scc35.txt",
+      "expected_answer": "November 1, 2024",
+      "keywords": [
+        "judgment",
+        "R. v. Archambault",
+        "November 1, 2024"
+      ],
+      "source_match": true,
+      "source_rank": 5,
+      "llm_answer": "The judgment in R. v. Archambault was rendered on November 1, 2024 (2024 SCC 35 (CanLII)).",
+      "keyword_match": true,
+      "keywords_found": [
+        "judgment",
+        "R. v. Archambault",
+        "November 1, 2024"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 39,
+      "question": "Which judges authored the joint reasons in the case?",
+      "expected_source": "2024scc35.txt",
+      "expected_answer": "C\u00f4t\u00e9 and Rowe JJ.",
+      "keywords": [
+        "joint reasons",
+        "C\u00f4t\u00e9",
+        "Rowe JJ."
+      ],
+      "source_match": true,
+      "source_rank": 8,
+      "llm_answer": "The judges who authored the joint reasons in the case 2024 SCC 40 (CanLII) are Wagner C.J. and Justices Karakatsanis, Martin, Kasirer, O\u2019Bonsawin, and Moreau.",
+      "keyword_match": false,
+      "keywords_found": [
+        "joint reasons"
+      ],
+      "keywords_missing": [
+        "C\u00f4t\u00e9",
+        "Rowe JJ."
+      ]
+    },
+    {
+      "id": 40,
+      "question": "What was the outcome of the appeal in Auer v. Auer?",
+      "expected_source": "2024scc36.txt",
+      "expected_answer": "The appeal was heard by the Supreme Court of Canada.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "Supreme Court of Canada"
+      ],
+      "source_match": true,
+      "source_rank": 4,
+      "llm_answer": "This information is not available in the provided case excerpts.",
+      "keyword_match": false,
+      "keywords_found": [],
+      "keywords_missing": [
+        "outcome",
+        "appeal",
+        "Supreme Court of Canada"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "Who were the respondents in the case of Auer v. Auer?",
+      "expected_source": "2024scc36.txt",
+      "expected_answer": "Aysel Igorevna Auer and Attorney General of Canada.",
+      "keywords": [
+        "respondents",
+        "Aysel Igorevna Auer",
+        "Attorney General of Canada"
+      ],
+      "source_match": true,
+      "source_rank": 6,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts do not mention the case of Auer v. Auer or identify the respondents in that case.",
+      "keyword_match": false,
+      "keywords_found": [
+        "respondents"
+      ],
+      "keywords_missing": [
+        "Aysel Igorevna Auer",
+        "Attorney General of Canada"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "On what date was the judgment in Auer v. Auer rendered?",
+      "expected_source": "2024scc36.txt",
+      "expected_answer": "November 8, 2024.",
+      "keywords": [
+        "judgment",
+        "date",
+        "November 8, 2024"
+      ],
+      "source_match": true,
+      "source_rank": 3,
+      "llm_answer": "The judgment in Auer v. Auer was rendered on November 8, 2024. This information can be found in the case excerpt for 2024 SCC 36 (CanLII).",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment",
+        "November 8, 2024"
+      ],
+      "keywords_missing": [
+        "date"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "What was the date when the appeal was heard by the Supreme Court of Canada?",
+      "expected_source": "2024scc37.txt",
+      "expected_answer": "April 25, 2024",
+      "keywords": [
+        "appeal",
+        "heard",
+        "April 25, 2024"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "The appeal in the case of R. v. DeSutter was heard by the Supreme Court of Canada on December 5, 2025 (2025 SCC 42 (CanLII)). Additionally, the appeal in the case of R. v. W.W. was heard on November 14, 2025 (2025 SCC 37 (CanLII)).",
+      "keyword_match": false,
+      "keywords_found": [
+        "appeal",
+        "heard"
+      ],
+      "keywords_missing": [
+        "April 25, 2024"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "Who were the appellants in the case TransAlta Generation Partnership v. Alberta?",
+      "expected_source": "2024scc37.txt",
+      "expected_answer": "TransAlta Generation Partnership and TransAlta Generation (Keephills 3)",
+      "keywords": [
+        "appellants",
+        "TransAlta Generation Partnership",
+        "TransAlta Generation (Keephills 3)"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The appellants in the case TransAlta Generation Partnership v. Alberta were TransAlta Generation Partnership and TransAlta Generation (Keephills 3) (collectively referred to as \"TransAlta\") (2024 SCC 37 (CanLII)).",
+      "keyword_match": true,
+      "keywords_found": [
+        "appellants",
+        "TransAlta Generation Partnership",
+        "TransAlta Generation (Keephills 3)"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 45,
+      "question": "What legal issue was addressed regarding the property assessment guidelines?",
+      "expected_source": "2024scc37.txt",
+      "expected_answer": "Whether guidelines violate common law rule against administrative discrimination",
+      "keywords": [
+        "legal issue",
+        "property assessment guidelines",
+        "administrative discrimination"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The legal issue addressed regarding the property assessment guidelines pertains to whether the Linear Guidelines established by the Minister under the Municipal Government Act (MGA) were ultra vires, meaning beyond the legal authority granted to the Minister. Specifically, the case examined whether these guidelines discriminated against TransAlta in the assessment of its coal-fired facilities.\n\nThe Court of Appeal of Alberta found that the Linear Guidelines did not discriminate against TransAlta because they applied to all coal-fired facilities subject to off-coal agreements, not just those owned by TransAlta. The court held that the Minister was authorized to distinguish between different types of properties, as this was a necessary incident of establishing a property valuation regime under the MGA (2024 SCC 37 (CanLII), para. 84-85).\n\nAdditionally, the Supreme Court addressed the standard of review applicable when reviewing the vires of subordinate legislation, concluding that the reasonableness standard under Vavilov applies, and that the Minister had the authority to draw distinctions based on the specifications and characteristics of properties (2024 SCC 37 (CanLII), para. 14, 54). \n\nThus, the legal issue revolved around the validity and discriminatory nature of the Linear Guidelines in relation to the MGA's provisions and purposes.",
+      "keyword_match": false,
+      "keywords_found": [
+        "legal issue",
+        "property assessment guidelines"
+      ],
+      "keywords_missing": [
+        "administrative discrimination"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "What was the outcome of the trial for the accused?",
+      "expected_source": "2024scc38.txt",
+      "expected_answer": "The accused was acquitted.",
+      "keywords": [
+        "outcome",
+        "trial",
+        "accused",
+        "acquitted"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The outcome of the trial for the accused in the case 2025 SCC 41 (CanLII) was that the jury convicted her of the attempted murder of her child and aggravated assault of the child. However, the Crown's appeal regarding the charge of attempted murder of the accused's mother was to be dismissed, and a new trial was deemed necessary on that charge due to an error in the trial judge's instructions to the jury. The trial judge failed to instruct the jury on the legal significance of the theory that the accused aided her mother\u2019s suicide attempt, which had an air of reality based on the evidence presented (para. 10-12).",
+      "keyword_match": false,
+      "keywords_found": [
+        "outcome",
+        "trial",
+        "accused"
+      ],
+      "keywords_missing": [
+        "acquitted"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "Who were the parties involved in the case?",
+      "expected_source": "2024scc38.txt",
+      "expected_answer": "His Majesty The King and T.J.F.",
+      "keywords": [
+        "parties",
+        "His Majesty The King",
+        "T.J.F."
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "In the case 2024 SCC 40 (CanLII), the parties involved were:\n\n- Appellants: Sanis Health Inc., Shoppers Drug Mart Inc., Sandoz Canada Inc., and McKesson Canada Corporation.\n- Respondent: The specific name of the respondent is not provided in the excerpts.\n\nIf you need more details about the case or the parties, please let me know!",
+      "keyword_match": false,
+      "keywords_found": [
+        "parties"
+      ],
+      "keywords_missing": [
+        "His Majesty The King",
+        "T.J.F."
+      ]
+    },
+    {
+      "id": 48,
+      "question": "On what date was the appeal heard?",
+      "expected_source": "2024scc38.txt",
+      "expected_answer": "March 27, 2024",
+      "keywords": [
+        "appeal",
+        "heard",
+        "March 27, 2024"
+      ],
+      "source_match": true,
+      "source_rank": 3,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts do not specify the date on which the appeal was heard for any of the cases mentioned.",
+      "keyword_match": false,
+      "keywords_found": [
+        "appeal",
+        "heard"
+      ],
+      "keywords_missing": [
+        "March 27, 2024"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "What was the date the judgment was rendered in the case of Quebec (Attorney General) v. Pekuakamiulnuatsh Takuhikan?",
+      "expected_source": "2024scc39.txt",
+      "expected_answer": "November 27, 2024",
+      "keywords": [
+        "judgment",
+        "rendered",
+        "November 27, 2024"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The judgment in the case of Quebec (Attorney General) v. Pekuakamiulnuatsh Takuhikan was rendered on November 27, 2024 (2024 SCC 39 (CanLII)).",
+      "keyword_match": true,
+      "keywords_found": [
+        "judgment",
+        "rendered",
+        "November 27, 2024"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 50,
+      "question": "Who were the appellant and respondent in the case?",
+      "expected_source": "2024scc39.txt",
+      "expected_answer": "Attorney General of Quebec was the appellant and Pekuakamiulnuatsh Takuhikan was the respondent.",
+      "keywords": [
+        "appellant",
+        "respondent",
+        "Attorney General of Quebec",
+        "Pekuakamiulnuatsh Takuhikan"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "In the case 2023 SCC 26 (CanLII), the appellant was His Majesty The King, and the respondents were Maxime Bertrand Marchand and H.V. \n\nIf you have any further questions about this case or need additional information, feel free to ask!",
+      "keyword_match": false,
+      "keywords_found": [
+        "appellant",
+        "respondent"
+      ],
+      "keywords_missing": [
+        "Attorney General of Quebec",
+        "Pekuakamiulnuatsh Takuhikan"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "Which judge provided the reasons for judgment in this case?",
+      "expected_source": "2024scc39.txt",
+      "expected_answer": "Kasirer J.",
+      "keywords": [
+        "reasons for judgment",
+        "Kasirer J."
+      ],
+      "source_match": true,
+      "source_rank": 4,
+      "llm_answer": "The reasons for judgment in the case of R. v. Lindsay, 2023 SCC 33, were delivered orally by Justice Jamal.",
+      "keyword_match": false,
+      "keywords_found": [
+        "reasons for judgment"
+      ],
+      "keywords_missing": [
+        "Kasirer J."
+      ]
+    },
+    {
+      "id": 52,
+      "question": "What was the date when the judgment was rendered in the case of Sanis Health Inc. v. British Columbia?",
+      "expected_source": "2024scc40.txt",
+      "expected_answer": "November 29, 2024",
+      "keywords": [
+        "judgment",
+        "Sanis Health Inc.",
+        "British Columbia",
+        "November 29, 2024"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The judgment in the case of Sanis Health Inc. v. British Columbia was rendered on November 29, 2024. This information can be found in the case excerpts provided (2024 SCC 40 (CanLII)).",
+      "keyword_match": true,
+      "keywords_found": [
+        "judgment",
+        "Sanis Health Inc.",
+        "British Columbia",
+        "November 29, 2024"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 53,
+      "question": "Who were the appellants in the case of Sanis Health Inc. v. British Columbia?",
+      "expected_source": "2024scc40.txt",
+      "expected_answer": "Sanis Health Inc., Shoppers Drug Mart Inc., Sandoz Canada Inc. and McKesson Canada Corporation",
+      "keywords": [
+        "appellants",
+        "Sanis Health Inc.",
+        "Shoppers Drug Mart Inc.",
+        "Sandoz Canada Inc.",
+        "McKesson Canada Corporation"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The appellants in the case of Sanis Health Inc. v. British Columbia were:\n\n1. Sanis Health Inc.\n2. Shoppers Drug Mart Inc.\n3. Sandoz Canada Inc.\n4. McKesson Canada Corporation.\n\nThis information is derived from the case header in the provided excerpts: 2024 SCC 40 (CanLII).",
+      "keyword_match": true,
+      "keywords_found": [
+        "appellants",
+        "Sanis Health Inc.",
+        "Shoppers Drug Mart Inc.",
+        "Sandoz Canada Inc.",
+        "McKesson Canada Corporation"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 54,
+      "question": "What legal issue was at the center of the appeal in Sanis Health Inc. v. British Columbia?",
+      "expected_source": "2024scc40.txt",
+      "expected_answer": "Whether the provision permitting British Columbia to act as representative plaintiff is ultra vires the legislative assembly of British Columbia",
+      "keywords": [
+        "legal issue",
+        "ultra vires",
+        "British Columbia",
+        "representative plaintiff"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The central legal issue in the appeal of *Sanis Health Inc. v. British Columbia* was whether section 11 of the Opioid Damages and Health Care Costs Recovery Act, S.B.C. 2018, c. 35 (the \"ORA\") was ultra vires the legislature of British Columbia. Specifically, the appeal questioned if the legislature could authorize the Province to initiate a class action to claim health care costs incurred by a foreign province on an opt-out basis, thereby compelling that province to participate unless it took steps to opt out of the proceeding. This issue raised significant implications regarding the constitutional validity of the provision in relation to the division of powers and the territorial limitations imposed by the Constitution Act, 1867 (2024 SCC 40).",
+      "keyword_match": false,
+      "keywords_found": [
+        "legal issue",
+        "ultra vires",
+        "British Columbia"
+      ],
+      "keywords_missing": [
+        "representative plaintiff"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "What was the outcome of the appeal in R. v. Campbell?",
+      "expected_source": "2024scc42.txt",
+      "expected_answer": "The appeal was heard on March 21, 2024, and the judgment was rendered on December 6, 2024.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "judgment",
+        "March 21, 2024",
+        "December 6, 2024"
+      ],
+      "source_match": true,
+      "source_rank": 2,
+      "llm_answer": "The outcome of the appeal in R. v. Campbell, 2024 SCC 42, was that the appeal was dismissed. The Supreme Court held that the accused had a reasonable expectation of privacy in his text message conversation and had standing to challenge the search under section 8 of the Canadian Charter of Rights and Freedoms. However, the warrantless search was justified by exigent circumstances under section 11(7) of the Controlled Drugs and Substances Act, meaning it did not breach section 8. Therefore, the court upheld the decision of the Court of Appeal, which had dismissed the accused's appeal.",
+      "keyword_match": false,
+      "keywords_found": [
+        "outcome",
+        "appeal"
+      ],
+      "keywords_missing": [
+        "judgment",
+        "March 21, 2024",
+        "December 6, 2024"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "Who were the judges that rendered the reasons for judgment in R. v. Campbell?",
+      "expected_source": "2024scc42.txt",
+      "expected_answer": "Jamal J. (Wagner C.J. and Kasirer and O\u2019Bonsawin JJ. concurring)",
+      "keywords": [
+        "judges",
+        "Jamal J.",
+        "Wagner C.J.",
+        "Kasirer",
+        "O\u2019Bonsawin"
+      ],
+      "source_match": true,
+      "source_rank": 2,
+      "llm_answer": "The judges that rendered the reasons for judgment in R. v. Campbell, 2024 SCC 42, were Jamal J. (with Wagner C.J. and Kasirer and O\u2019Bonsawin JJ. concurring). Additionally, there were concurring reasons provided by Rowe J. and C\u00f4t\u00e9 J., and joint dissenting reasons by Martin and Moreau JJ. (with Karakatsanis J. concurring).",
+      "keyword_match": true,
+      "keywords_found": [
+        "judges",
+        "Jamal J.",
+        "Wagner C.J.",
+        "Kasirer",
+        "O\u2019Bonsawin"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 57,
+      "question": "What legal issue was addressed in the case of R. v. Campbell?",
+      "expected_source": "2024scc42.txt",
+      "expected_answer": "The case addressed the reasonable expectation of privacy in a text message conversation and the legality of a warrantless search.",
+      "keywords": [
+        "legal issue",
+        "reasonable expectation of privacy",
+        "text message",
+        "warrantless search"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The legal issue addressed in the case of R. v. Campbell, 2024 SCC 42 (CanLII), revolves around constitutional law, specifically the interpretation of the Canadian Charter of Rights and Freedoms, section 8, which protects against unreasonable search and seizure. The case examined whether the accused had a reasonable expectation of privacy in his text message conversation and whether the warrantless search conducted by the police was justified under exigent circumstances as outlined in section 11(7) of the Controlled Drugs and Substances Act (CDSA).\n\nThe police had seized a cellphone during the arrest of a known drug dealer and subsequently used it to impersonate the dealer in a text message conversation with the accused, leading to the accused's arrest for drug trafficking. The trial judge initially found that the accused lacked standing to argue a violation of his rights under section 8, while the Court of Appeal concluded that he did have a reasonable expectation of privacy but upheld the search based on exigent circumstances. Ultimately, the Supreme Court held that the accused had a reasonable expectation of privacy and that the warrantless search was justified by exigent circumstances, thus not breaching section 8 of the Charter.",
+      "keyword_match": true,
+      "keywords_found": [
+        "legal issue",
+        "reasonable expectation of privacy",
+        "text message",
+        "warrantless search"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 58,
+      "question": "What is the citation of the case?",
+      "expected_source": "2024scc43.txt",
+      "expected_answer": "Quebec (Commission des droits de la personne et des droits de la jeunesse) v. Directrice de la protection de la jeunesse du CISSS A, 2024 SCC 43",
+      "keywords": [
+        "Quebec",
+        "Commission des droits de la personne",
+        "Directrice de la protection de la jeunesse",
+        "2024 SCC 43"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "The citation of the case is R. v. Vrbanic, 2025 CanLII 125773 (SCC).",
+      "keyword_match": false,
+      "keywords_found": [],
+      "keywords_missing": [
+        "Quebec",
+        "Commission des droits de la personne",
+        "Directrice de la protection de la jeunesse",
+        "2024 SCC 43"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "On what date was the judgment rendered?",
+      "expected_source": "2024scc43.txt",
+      "expected_answer": "December 20, 2024",
+      "keywords": [
+        "judgment",
+        "rendered",
+        "December 20, 2024"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "The provided case excerpts do not specify the exact date on which the judgment was rendered in the case 2025 SCC 44 (CanLII). This information is not available in the provided case excerpts.",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment",
+        "rendered"
+      ],
+      "keywords_missing": [
+        "December 20, 2024"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "Who were the judges presiding over the case?",
+      "expected_source": "2024scc43.txt",
+      "expected_answer": "Wagner C.J. and Karakatsanis, C\u00f4t\u00e9, Rowe, Martin, Kasirer, Jamal, O\u2019Bonsawin and Moreau JJ.",
+      "keywords": [
+        "Wagner C.J.",
+        "Karakatsanis",
+        "C\u00f4t\u00e9",
+        "Rowe",
+        "Moreau JJ."
+      ],
+      "source_match": true,
+      "source_rank": 10,
+      "llm_answer": "The judges presiding over the case 2024 SCC 40 were Wagner C.J. and Justices Karakatsanis, Martin, Kasirer, O\u2019Bonsawin, and Moreau JJ. This information is found in the provided case excerpts.",
+      "keyword_match": false,
+      "keywords_found": [
+        "Wagner C.J.",
+        "Karakatsanis",
+        "Moreau JJ."
+      ],
+      "keywords_missing": [
+        "C\u00f4t\u00e9",
+        "Rowe"
+      ]
+    },
+    {
+      "id": 61,
+      "question": "What was the date when the appeal was heard and judgment rendered?",
+      "expected_source": "2025canlii125773.txt",
+      "expected_answer": "December 4, 2025",
+      "keywords": [
+        "appeal",
+        "judgment",
+        "date",
+        "December 4, 2025"
+      ],
+      "source_match": true,
+      "source_rank": 2,
+      "llm_answer": "The appeal in the case of R. v. W.W. was heard on November 14, 2025, and the judgment was also rendered on the same day, November 14, 2025 (2025 SCC 37 (CanLII)). \n\nIn the case of R. v. DeSutter, the appeal was heard on December 5, 2025, and the judgment was rendered on that same day, December 5, 2025 (2025 SCC 42 (CanLII)). \n\nIf you have any further questions or need more details, feel free to ask!",
+      "keyword_match": false,
+      "keywords_found": [
+        "appeal",
+        "judgment"
+      ],
+      "keywords_missing": [
+        "date",
+        "December 4, 2025"
+      ]
+    },
+    {
+      "id": 62,
+      "question": "Who were the respondents in the case?",
+      "expected_source": "2025canlii125773.txt",
+      "expected_answer": "Robert Vrbanic and Sarah Josipovic",
+      "keywords": [
+        "respondents",
+        "Robert Vrbanic",
+        "Sarah Josipovic"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "The respondents in the case were Mr. Beaulne and Mr. Rh\u00e9aume. They filed a motion to institute proceedings for damages in the Superior Court, claiming approximately $24 million as compensation for the gain they would have made through a transaction involving Groupe Excellence, which they alleged they were deprived of due to the actions of the appellants (2023 SCC 25 (CanLII), para. 22).",
+      "keyword_match": false,
+      "keywords_found": [
+        "respondents"
+      ],
+      "keywords_missing": [
+        "Robert Vrbanic",
+        "Sarah Josipovic"
+      ]
+    },
+    {
+      "id": 63,
+      "question": "Which Chief Justice read the unanimous judgment?",
+      "expected_source": "2025canlii125773.txt",
+      "expected_answer": "Wagner C.J.",
+      "keywords": [
+        "unanimous judgment",
+        "Wagner",
+        "Chief Justice"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The Chief Justice who read the unanimous judgment in the case R. v. Vrbanic is Wagner C.J. This information is found in the excerpt from the case 2025 CanLII 125773 (SCC), where it states, \"UNANIMOUS JUDGMENT READ BY: (para. 1) Wagner C.J.\"",
+      "keyword_match": true,
+      "keywords_found": [
+        "unanimous judgment",
+        "Wagner",
+        "Chief Justice"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 64,
+      "question": "Who was the appellant in the case R. v. Larocque?",
+      "expected_source": "2025scc36.txt",
+      "expected_answer": "St\u00e9phane Larocque",
+      "keywords": [
+        "appellant",
+        "R. v. Larocque",
+        "St\u00e9phane Larocque"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The appellant in the case R. v. Larocque was St\u00e9phane Larocque. This information is found in the case header of the provided excerpts.",
+      "keyword_match": true,
+      "keywords_found": [
+        "appellant",
+        "R. v. Larocque",
+        "St\u00e9phane Larocque"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 65,
+      "question": "What was the legal issue addressed in R. v. Larocque regarding breath alcohol testing?",
+      "expected_source": "2025scc36.txt",
+      "expected_answer": "Whether Crown required to disclose and prove at trial target value of alcohol standard used in breath analysis instrument calibration test.",
+      "keywords": [
+        "breath alcohol testing",
+        "Crown",
+        "target value",
+        "calibration test"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The legal issue addressed in *R. v. Larocque*, 2025 SCC 36, concerned whether the Crown was required to disclose and prove the target value of the alcohol standard used in the calibration test of the breath analysis instrument in order to benefit from the statutory presumption of accuracy for breath sample analysis results. Specifically, the case examined the interpretation of sections 320.31(1)(a) and 320.34(1)(b) of the Criminal Code, R.S.C. 1985, c. C-46, in the context of impaired driving charges.\n\nThe appellant, St\u00e9phane Larocque, contended that the Crown needed to prove the target value to rely on the presumption of accuracy. The Court of Appeal had held that it was sufficient for the qualified technician to attest that the calibration check result was within 10% of the target value certified by an analyst, without requiring the target value itself to be disclosed or proven. The Supreme Court ultimately concluded that while the Crown must disclose the target value, it need not prove it at the time of testing to rely on the presumption of accuracy. This interpretation aimed to simplify and streamline impaired driving prosecutions while ensuring the accused had sufficient information to challenge the evidence.",
+      "keyword_match": false,
+      "keywords_found": [
+        "Crown",
+        "target value",
+        "calibration test"
+      ],
+      "keywords_missing": [
+        "breath alcohol testing"
+      ]
+    },
+    {
+      "id": 66,
+      "question": "On what date was the judgment in R. v. Larocque rendered?",
+      "expected_source": "2025scc36.txt",
+      "expected_answer": "November 14, 2025",
+      "keywords": [
+        "judgment",
+        "November 14, 2025",
+        "R. v. Larocque"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The judgment in R. v. Larocque was rendered on November 14, 2025. This information is found in the case excerpts provided.",
+      "keyword_match": true,
+      "keywords_found": [
+        "judgment",
+        "November 14, 2025",
+        "R. v. Larocque"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 67,
+      "question": "What was the outcome of W.W.'s appeal to the Supreme Court of Canada?",
+      "expected_source": "2025scc37.txt",
+      "expected_answer": "The appeal was heard and the Court delivered a judgment that set aside the acquittal and substituted a conviction.",
+      "keywords": [
+        "outcome",
+        "W.W.",
+        "appeal",
+        "conviction",
+        "acquittal"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "W.W.'s appeal to the Supreme Court of Canada resulted in the court setting aside the acquittal that had been granted to him at trial. The Court of Appeal for Ontario had previously substituted a conviction for W.W. on the charge of transmitting sexually explicit material to a 15-year-old child for the purpose of facilitating the commission of a sexual assault or of indecent exposure, pursuant to s. 171.1(1)(b) of the Criminal Code, R.S.C. 1985, c. C-46 (R. v. W.W., 2025 SCC 37 (CanLII)).",
+      "keyword_match": false,
+      "keywords_found": [
+        "W.W.",
+        "appeal",
+        "conviction",
+        "acquittal"
+      ],
+      "keywords_missing": [
+        "outcome"
+      ]
+    },
+    {
+      "id": 68,
+      "question": "Who represented the appellant W.W. in the Supreme Court of Canada?",
+      "expected_source": "2025scc37.txt",
+      "expected_answer": "Jeffery E. Couse and Linnea Kornhauser represented the appellant.",
+      "keywords": [
+        "appellant",
+        "W.W.",
+        "representatives",
+        "counsel",
+        "Jeffery E. Couse"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The appellant W.W. was represented by Jeffery E. Couse and Linnea Kornhauser in the Supreme Court of Canada, as noted in the case R. v. W.W., 2025 SCC 37 (CanLII).",
+      "keyword_match": false,
+      "keywords_found": [
+        "appellant",
+        "W.W.",
+        "Jeffery E. Couse"
+      ],
+      "keywords_missing": [
+        "representatives",
+        "counsel"
+      ]
+    },
+    {
+      "id": 69,
+      "question": "On what date was the judgment rendered by the Supreme Court of Canada in the case of R. v. W.W.?",
+      "expected_source": "2025scc37.txt",
+      "expected_answer": "The judgment was rendered on November 14, 2025.",
+      "keywords": [
+        "judgment",
+        "date",
+        "November 14, 2025",
+        "R. v. W.W.",
+        "Supreme Court"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The judgment in the case of R. v. W.W. was rendered by the Supreme Court of Canada on November 14, 2025. This information is found in the case excerpts provided: \"JUDGMENT RENDERED : November 14, 2025.\" (2025 SCC 37 (CanLII)).",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment",
+        "November 14, 2025",
+        "R. v. W.W.",
+        "Supreme Court"
+      ],
+      "keywords_missing": [
+        "date"
+      ]
+    },
+    {
+      "id": 70,
+      "question": "What was the outcome of the appeal in Dorsey v. Canada (Attorney General)?",
+      "expected_source": "2025scc38.txt",
+      "expected_answer": "The appeal was heard and judgment rendered, but the specific outcome is not detailed in the excerpt.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "Dorsey v. Canada"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The outcome of the appeal in *Dorsey v. Canada (Attorney General)* was that the appeal was dismissed. The Supreme Court upheld the Court of Appeal's judgment, concluding that habeas corpus is not available to challenge decisions denying reclassification or transfer to lower security facilities for the appellants, Frank Dorsey and Ghassan Salah. The court determined that neither inmate had experienced an unlawful deprivation of liberty that would warrant the use of habeas corpus (2025 SCC 38 (CanLII), paras. 204-208).",
+      "keyword_match": true,
+      "keywords_found": [
+        "outcome",
+        "appeal",
+        "Dorsey v. Canada"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 71,
+      "question": "Who were the appellants in the case Dorsey v. Canada?",
+      "expected_source": "2025scc38.txt",
+      "expected_answer": "Frank Dorsey and Ghassan Salah",
+      "keywords": [
+        "appellants",
+        "Frank Dorsey",
+        "Ghassan Salah"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The appellants in the case Dorsey v. Canada (Attorney General) were Frank Dorsey and Ghassan Salah. This information is found in the case header of the provided excerpts. \n\n**Citation:** Dorsey v. Canada (Attorney General), 2025 SCC 38 (CanLII).",
+      "keyword_match": true,
+      "keywords_found": [
+        "appellants",
+        "Frank Dorsey",
+        "Ghassan Salah"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 72,
+      "question": "What legal issue was determined regarding the availability of habeas corpus in this case?",
+      "expected_source": "2025scc38.txt",
+      "expected_answer": "Whether habeas corpus is available to challenge a refusal to reclassify an inmate to a lower security facility.",
+      "keywords": [
+        "habeas corpus",
+        "legal issue",
+        "reclassify",
+        "inmate"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The legal issue determined in this case regarding the availability of habeas corpus was whether it is available to challenge the Correctional Service of Canada's (CSC) refusal to reclassify an inmate to a lower security level. The appeal raised this single issue, and although it became moot as both appellants were reclassified and transferred to minimum-security facilities, the Court decided to exercise its discretion to resolve the legal question due to its public importance.\n\nThe Court concluded that habeas corpus is not an unrestricted remedy and should not be used to challenge decisions denying transfer from medium- to minimum-security unless the applicant has an existing legal entitlement to that transfer. This aligns with the precedent set in Dumas, which established that an inmate must demonstrate a legal entitlement to reclassification and transfer to lower security to bring an application for habeas corpus based on the third category of deprivation of liberty (continuation of detention) (2025 SCC 38 (CanLII), paras. 29, 124, 141).",
+      "keyword_match": true,
+      "keywords_found": [
+        "habeas corpus",
+        "legal issue",
+        "reclassify",
+        "inmate"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 73,
+      "question": "What was the date when the appeal was heard?",
+      "expected_source": "2025scc39.txt",
+      "expected_answer": "January 15, 2025",
+      "keywords": [
+        "appeal",
+        "heard",
+        "January 15, 2025"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts.",
+      "keyword_match": false,
+      "keywords_found": [],
+      "keywords_missing": [
+        "appeal",
+        "heard",
+        "January 15, 2025"
+      ]
+    },
+    {
+      "id": 74,
+      "question": "Who were the appellants in the case?",
+      "expected_source": "2025scc39.txt",
+      "expected_answer": "Lundin Mining Corporation, Paul K. Conibear, Marie Inkster, Paul McRae, Lukas H. Lundin and Stephen Gatley",
+      "keywords": [
+        "appellants",
+        "Lundin Mining Corporation",
+        "Paul K. Conibear",
+        "Marie Inkster",
+        "Stephen Gatley"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "The appellants in the case 2023 SCC 29 (CanLII) were four British Columbia residents who were alleged to have contravened the Quebec Securities Act by participating in a transnational \"pump-and-dump\" securities manipulation scheme with links to Quebec. Their names are not specified in the provided excerpts.",
+      "keyword_match": false,
+      "keywords_found": [
+        "appellants"
+      ],
+      "keywords_missing": [
+        "Lundin Mining Corporation",
+        "Paul K. Conibear",
+        "Marie Inkster",
+        "Stephen Gatley"
+      ]
+    },
+    {
+      "id": 75,
+      "question": "What was the main legal issue in the case?",
+      "expected_source": "2025scc39.txt",
+      "expected_answer": "Liability for secondary market disclosure and failure to make timely disclosure of material changes.",
+      "keywords": [
+        "legal issue",
+        "liability",
+        "secondary market disclosure",
+        "timely disclosure",
+        "material changes"
+      ],
+      "source_match": true,
+      "source_rank": 2,
+      "llm_answer": "The main legal issue in the case of 2023 SCC 29 (CanLII) revolves around two key questions: (1) the standard of review of the FMAT\u2019s decision that it has jurisdiction over the appellants, and (2) whether the FMAT properly assumed jurisdiction over the out-of-province appellants under the rules of private international law, specifically as addressed in Title Three of Book Ten of the C.C.Q. (para. 35). \n\nThis case also raises questions regarding the constitutional applicability of the Securities Act and the jurisdictional rules applicable to Quebec authorities (para. 32).",
+      "keyword_match": false,
+      "keywords_found": [
+        "legal issue"
+      ],
+      "keywords_missing": [
+        "liability",
+        "secondary market disclosure",
+        "timely disclosure",
+        "material changes"
+      ]
+    },
+    {
+      "id": 76,
+      "question": "Who was the appellant in the case R. v. Ouellet?",
+      "expected_source": "2025scc40.txt",
+      "expected_answer": "Ga\u00e9tan Ouellet",
+      "keywords": [
+        "appellant",
+        "R. v. Ouellet",
+        "Ga\u00e9tan Ouellet"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts. The case excerpts only include details for R. v. Lindsay (2023 SCC 33) and R. v. Larocque (2025 SCC 36), but do not mention a case titled R. v. Ouellet.",
+      "keyword_match": false,
+      "keywords_found": [
+        "R. v. Ouellet"
+      ],
+      "keywords_missing": [
+        "appellant",
+        "Ga\u00e9tan Ouellet"
+      ]
+    },
+    {
+      "id": 77,
+      "question": "What was the outcome of the appeal in R. v. Ouellet?",
+      "expected_source": "2025scc40.txt",
+      "expected_answer": "The appeal was dismissed.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "dismissed"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "The outcome of the appeal in R. v. Ouellet, as referenced in the provided case excerpts from 2023 SCC 30 (CanLII), was that the appeal was dismissed. The majority opinion, delivered by Rowe and O\u2019Bonsawin JJ., affirmed the decision to admit the drug evidence and upheld the appellant\u2019s conviction. However, Martin and Kasirer JJ. dissented, stating that they would allow the appeal and enter an acquittal instead of ordering a new trial. \n\nThus, the final outcome was that the appeal was dismissed, with dissenting opinions advocating for an acquittal.",
+      "keyword_match": true,
+      "keywords_found": [
+        "outcome",
+        "appeal",
+        "dismissed"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 78,
+      "question": "On what date was the judgment in R. v. Ouellet rendered?",
+      "expected_source": "2025scc40.txt",
+      "expected_answer": "December 3, 2025",
+      "keywords": [
+        "judgment",
+        "date",
+        "December 3, 2025"
+      ],
+      "source_match": true,
+      "source_rank": 2,
+      "llm_answer": "The judgment in R. v. Ouellet was rendered on December 3, 2025. This information is found in the case excerpts provided.",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment",
+        "December 3, 2025"
+      ],
+      "keywords_missing": [
+        "date"
+      ]
+    },
+    {
+      "id": 79,
+      "question": "What was the date when the judgment was rendered in R. v. B.F.?",
+      "expected_source": "2025scc41.txt",
+      "expected_answer": "December 5, 2025",
+      "keywords": [
+        "judgment",
+        "rendered",
+        "December 5, 2025"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The judgment in R. v. B.F. was rendered on December 5, 2025. This information is found in the case excerpts provided (2025 SCC 41 (CanLII)).",
+      "keyword_match": true,
+      "keywords_found": [
+        "judgment",
+        "rendered",
+        "December 5, 2025"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 80,
+      "question": "Who were the interveners in the case of R. v. B.F.?",
+      "expected_source": "2025scc41.txt",
+      "expected_answer": "Attorney General of Canada, Canadian Civil Liberties Association and Inclusion Canada",
+      "keywords": [
+        "interveners",
+        "Attorney General of Canada",
+        "Canadian Civil Liberties Association",
+        "Inclusion Canada"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "In the case of R. v. B.F., the interveners were:\n\n- Attorney General of Canada\n- Canadian Civil Liberties Association\n- Inclusion Canada\n\nThis information is derived from the provided case excerpts for 2025 SCC 41 (CanLII).",
+      "keyword_match": true,
+      "keywords_found": [
+        "interveners",
+        "Attorney General of Canada",
+        "Canadian Civil Liberties Association",
+        "Inclusion Canada"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 81,
+      "question": "What was the main legal issue addressed in R. v. B.F.?",
+      "expected_source": "2025scc41.txt",
+      "expected_answer": "Whether the trial judge made reviewable errors in instructing the jury.",
+      "keywords": [
+        "legal issue",
+        "trial judge",
+        "reviewable errors",
+        "instructing jury"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The main legal issue addressed in R. v. B.F. (2025 SCC 41) was whether the trial judge erred in instructing the jury regarding the charges of attempted murder and aggravated assault against B.F. Specifically, the court examined whether the jury was properly equipped to determine B.F.'s guilt based on the evidence presented, including the defense theory that I.F. acted independently in injecting insulin. The Supreme Court concluded that the trial judge's instructions were adequate and that the jury was correctly directed to consider B.F.'s specific actions and intent in relation to the charges (see paragraphs 70-73).",
+      "keyword_match": false,
+      "keywords_found": [
+        "legal issue",
+        "trial judge"
+      ],
+      "keywords_missing": [
+        "reviewable errors",
+        "instructing jury"
+      ]
+    },
+    {
+      "id": 82,
+      "question": "What was the outcome of the appeal in R. v. DeSutter?",
+      "expected_source": "2025scc42.txt",
+      "expected_answer": "The appeal was allowed and a new trial is ordered on counts 3 and 14.",
+      "keywords": [
+        "appeal",
+        "allowed",
+        "new trial",
+        "counts 3 and 14"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The outcome of the appeal in R. v. DeSutter, 2025 SCC 42 (CanLII), was that the appeal was allowed, and a new trial was ordered on counts 3 and 14 of the information laid on October 25, 2021, relating to sexual exploitation of a person under 18 years of age, contrary to s. 153(1)(a) of the Criminal Code. The appeal was heard on December 5, 2025, and the judgment was rendered on the same day. Justices Martin, Kasirer, and O\u2019Bonsawin would allow the appeal, while Justices Rowe and Jamal would dismiss it.",
+      "keyword_match": true,
+      "keywords_found": [
+        "appeal",
+        "allowed",
+        "new trial",
+        "counts 3 and 14"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 83,
+      "question": "Who were the judges in the majority opinion for the case R. v. DeSutter?",
+      "expected_source": "2025scc42.txt",
+      "expected_answer": "Justices Martin, Kasirer, and O\u2019Bonsawin.",
+      "keywords": [
+        "majority",
+        "judges",
+        "Martin",
+        "Kasirer",
+        "O\u2019Bonsawin"
+      ],
+      "source_match": true,
+      "source_rank": 3,
+      "llm_answer": "In the case R. v. DeSutter, 2025 SCC 42 (CanLII), the judges in the majority opinion were Justices Martin, Kasirer, and O\u2019Bonsawin.",
+      "keyword_match": true,
+      "keywords_found": [
+        "majority",
+        "judges",
+        "Martin",
+        "Kasirer",
+        "O\u2019Bonsawin"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 84,
+      "question": "On what date was the appeal in R. v. DeSutter heard?",
+      "expected_source": "2025scc42.txt",
+      "expected_answer": "December 5, 2025.",
+      "keywords": [
+        "appeal",
+        "heard",
+        "December 5, 2025"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The appeal in R. v. DeSutter was heard on December 5, 2025. This information is found in the case excerpts provided.",
+      "keyword_match": true,
+      "keywords_found": [
+        "appeal",
+        "heard",
+        "December 5, 2025"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 85,
+      "question": "What was the outcome of the appeal in R. v. Carignan?",
+      "expected_source": "2025scc43.txt",
+      "expected_answer": "The accused was convicted.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "convicted"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts do not mention a case titled R. v. Carignan or its outcome.",
+      "keyword_match": false,
+      "keywords_found": [
+        "outcome"
+      ],
+      "keywords_missing": [
+        "appeal",
+        "convicted"
+      ]
+    },
+    {
+      "id": 86,
+      "question": "Who was the appellant in the case R. v. Carignan?",
+      "expected_source": "2025scc43.txt",
+      "expected_answer": "His Majesty The King",
+      "keywords": [
+        "appellant",
+        "His Majesty The King"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": "This information is not available in the provided case excerpts. The case R. v. Carignan is not mentioned in the excerpts, and therefore, I cannot provide details about the appellant or any other aspects of that case.",
+      "keyword_match": false,
+      "keywords_found": [
+        "appellant"
+      ],
+      "keywords_missing": [
+        "His Majesty The King"
+      ]
+    },
+    {
+      "id": 87,
+      "question": "On what date was the judgment in R. v. Carignan rendered?",
+      "expected_source": "2025scc43.txt",
+      "expected_answer": "December 12, 2025",
+      "keywords": [
+        "judgment",
+        "date",
+        "December 12, 2025"
+      ],
+      "source_match": true,
+      "source_rank": 3,
+      "llm_answer": "The judgment in R. v. Carignan was rendered on December 12, 2025.",
+      "keyword_match": false,
+      "keywords_found": [
+        "judgment",
+        "December 12, 2025"
+      ],
+      "keywords_missing": [
+        "date"
+      ]
+    },
+    {
+      "id": 88,
+      "question": "What was the outcome of the appeal heard on February 17, 2025?",
+      "expected_source": "2025scc44.txt",
+      "expected_answer": "The Court of Appeal allowed Laroda\u2019s appeal and ordered the City to pay Laroda $287,458.51.",
+      "keywords": [
+        "outcome",
+        "appeal",
+        "Laroda",
+        "City",
+        "payment"
+      ],
+      "source_match": true,
+      "source_rank": 5,
+      "llm_answer": "This information is not available in the provided case excerpts. The excerpts reference appeals heard on December 4, 2025, and November 14, 2025, but there is no mention of an appeal heard on February 17, 2025.",
+      "keyword_match": false,
+      "keywords_found": [
+        "appeal"
+      ],
+      "keywords_missing": [
+        "outcome",
+        "Laroda",
+        "City",
+        "payment"
+      ]
+    },
+    {
+      "id": 89,
+      "question": "Who were the judges present in the case Sainte-Julie (City) v. Investissements Laroda inc.?",
+      "expected_source": "2025scc44.txt",
+      "expected_answer": "Wagner C.J. and Karakatsanis, C\u00f4t\u00e9, Rowe, Martin, Kasirer, Jamal, O\u2019Bonsawin and Moreau JJ.",
+      "keywords": [
+        "judges",
+        "Wagner",
+        "Karakatsanis",
+        "C\u00f4t\u00e9",
+        "Moreau"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "In the case Sainte-Julie (City) v. Investissements Laroda inc., the judges present were Wagner C.J. and Karakatsanis, C\u00f4t\u00e9, Rowe, Martin, Kasirer, Jamal, O\u2019Bonsawin, and Moreau JJ. This information is found in the case header of the provided excerpts.",
+      "keyword_match": true,
+      "keywords_found": [
+        "judges",
+        "Wagner",
+        "Karakatsanis",
+        "C\u00f4t\u00e9",
+        "Moreau"
+      ],
+      "keywords_missing": []
+    },
+    {
+      "id": 90,
+      "question": "What legal issue was central to the case involving Ville de Sainte-Julie and Investissements Laroda inc.?",
+      "expected_source": "2025scc44.txt",
+      "expected_answer": "Whether the agreement created an obligation with term or conditional obligation.",
+      "keywords": [
+        "legal issue",
+        "obligation",
+        "agreement",
+        "conditional",
+        "term"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": "The central legal issue in the case involving Ville de Sainte-Julie and Investissements Laroda inc. was whether the agreement between the municipality and the developer effected novation of a pre-existing obligation. Specifically, the court needed to determine if the agreement transformed the City\u2019s prior obligation resulting from the excess land transferred by the developer into a new contractual obligation, thereby creating a distinct obligational relationship. Additionally, the case examined whether the obligation created by the agreement was an obligation with a term or a conditional obligation, and what remedy, if any, Laroda was entitled to given that the \"area bank\" was never utilized (2025 SCC 44 (CanLII)).",
+      "keyword_match": true,
+      "keywords_found": [
+        "legal issue",
+        "obligation",
+        "agreement",
+        "conditional",
+        "term"
+      ],
+      "keywords_missing": []
+    }
+  ]
+}

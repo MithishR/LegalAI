@@ -1,0 +1,99 @@
+{
+  "timestamp": "2026-04-05T01:54:45.134396Z",
+  "total_questions": 5,
+  "retrieval_only": true,
+  "top_k": 10,
+  "source_correct": 3,
+  "source_accuracy_pct": 60.0,
+  "keyword_eligible": 0,
+  "keyword_correct": 0,
+  "keyword_accuracy_pct": null,
+  "per_question": [
+    {
+      "id": 1,
+      "question": "What was the outcome of the appeal by the Canadian Broadcasting Corporation?",
+      "expected_source": "2023canlii96444.txt",
+      "expected_answer": "The appeal should be dismissed.",
+      "keywords": [
+        "appeal",
+        "Canadian Broadcasting Corporation",
+        "dismissed"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": null,
+      "keyword_match": null,
+      "keywords_found": [],
+      "keywords_missing": []
+    },
+    {
+      "id": 2,
+      "question": "Who were the respondents in the case?",
+      "expected_source": "2023canlii96444.txt",
+      "expected_answer": "His Majesty The King, B.B., spouse of the late M.D., and J.D., in his capacity as executor of the estate of the late M.D.",
+      "keywords": [
+        "respondents",
+        "His Majesty The King",
+        "B.B.",
+        "J.D."
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": null,
+      "keyword_match": null,
+      "keywords_found": [],
+      "keywords_missing": []
+    },
+    {
+      "id": 3,
+      "question": "On what date was the judgment rendered?",
+      "expected_source": "2023canlii96444.txt",
+      "expected_answer": "November 9, 2023.",
+      "keywords": [
+        "judgment",
+        "rendered",
+        "November 9, 2023"
+      ],
+      "source_match": true,
+      "source_rank": 4,
+      "llm_answer": null,
+      "keyword_match": null,
+      "keywords_found": [],
+      "keywords_missing": []
+    },
+    {
+      "id": 4,
+      "question": "What was the date when the appeal was heard?",
+      "expected_source": "2023scc25.txt",
+      "expected_answer": "January 12, 2023",
+      "keywords": [
+        "appeal",
+        "heard",
+        "January 12, 2023"
+      ],
+      "source_match": false,
+      "source_rank": null,
+      "llm_answer": null,
+      "keyword_match": null,
+      "keywords_found": [],
+      "keywords_missing": []
+    },
+    {
+      "id": 5,
+      "question": "Who were the appellants in the case?",
+      "expected_source": "2023scc25.txt",
+      "expected_answer": "Antoine Ponce and Daniel Riopel",
+      "keywords": [
+        "appellants",
+        "Antoine Ponce",
+        "Daniel Riopel"
+      ],
+      "source_match": true,
+      "source_rank": 1,
+      "llm_answer": null,
+      "keyword_match": null,
+      "keywords_found": [],
+      "keywords_missing": []
+    }
+  ]
+}
