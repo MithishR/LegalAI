@@ -1,9 +1,3 @@
-"""
-Q/A Pair Generator
-Takes a chunked-case JSON file (or a single chunk) and a prompt template,
-and uses the LLM to generate verified Question/Answer pairs for the benchmark.
-"""
-
 import argparse
 import json
 import os
