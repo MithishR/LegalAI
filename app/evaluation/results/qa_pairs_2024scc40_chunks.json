@@ -1,0 +1,38 @@
+[
+  {
+    "question": "What was the date when the judgment was rendered in the case of Sanis Health Inc. v. British Columbia?",
+    "answer": "November 29, 2024",
+    "keywords": [
+      "judgment",
+      "Sanis Health Inc.",
+      "British Columbia",
+      "November 29, 2024"
+    ],
+    "source_file": "2024scc40.txt",
+    "chunk_id": 0
+  },
+  {
+    "question": "Who were the appellants in the case of Sanis Health Inc. v. British Columbia?",
+    "answer": "Sanis Health Inc., Shoppers Drug Mart Inc., Sandoz Canada Inc. and McKesson Canada Corporation",
+    "keywords": [
+      "appellants",
+      "Sanis Health Inc.",
+      "Shoppers Drug Mart Inc.",
+      "Sandoz Canada Inc.",
+      "McKesson Canada Corporation"
+    ],
+    "source_file": "2024scc40.txt",
+    "chunk_id": 0
+  },
+  {
+    "question": "Which judge provided the reasons for judgment in the case?",
+    "answer": "Karakatsanis J.",
+    "keywords": [
+      "Karakatsanis J.",
+      "reasons for judgment",
+      "Sanis Health Inc. v. British Columbia"
+    ],
+    "source_file": "2024scc40.txt",
+    "chunk_id": 0
+  }
+]

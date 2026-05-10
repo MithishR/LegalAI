@@ -1,0 +1,452 @@
+{
+  "timestamp": "2026-04-05T01:41:59.867656Z",
+  "retrieval_mode": "hybrid",
+  "hybrid_alpha": 0.5,
+  "top_k": 10,
+  "total_questions": 30,
+  "correct": 30,
+  "citation_accuracy_pct": 100.0,
+  "per_question": [
+    {
+      "id": 1,
+      "question": "What civil obligation did the presidents breach in Ponce v. Soci\u00e9t\u00e9 d'investissements Rh\u00e9aume lt\u00e9e when they purchased the shareholders' interests without disclosure?",
+      "expected_source": "2023scc25.txt",
+      "expected_citation": "2023 SCC 25 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2023scc25.txt"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What was the outcome of the appeal in R. v. Bertrand Marchand before the Supreme Court of Canada?",
+      "expected_source": "2023scc26.txt",
+      "expected_citation": "2023 SCC 26 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2023scc26.txt",
+        "2024scc42.txt"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What was the central constitutional question raised in R. v. Greater Sudbury (City) regarding occupational health and safety obligations?",
+      "expected_source": "2023scc28.txt",
+      "expected_citation": "2023 SCC 28 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 2,
+      "top_sources": [
+        "2023scc30.txt",
+        "2023scc28.txt",
+        "2024scc34.txt",
+        "2024scc40.txt"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What was the outcome in Sharp v. Autorit\u00e9 des march\u00e9s financiers at the Supreme Court of Canada?",
+      "expected_source": "2023scc29.txt",
+      "expected_citation": "2023 SCC 29 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2023scc29.txt"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which judges comprised the panel in R. v. Zacharias and what was the result of the appeal?",
+      "expected_source": "2023scc30.txt",
+      "expected_citation": "2023 SCC 30 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2023scc30.txt",
+        "2025scc36.txt",
+        "2024scc38.txt",
+        "2024scc35.txt"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What was the result of the appeal in Commission scolaire francophone des Territoires du Nord-Ouest before the Supreme Court of Canada?",
+      "expected_source": "2023scc31.txt",
+      "expected_citation": "2023 SCC 31 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 3,
+      "top_sources": [
+        "2025scc37.txt",
+        "2024scc39.txt",
+        "2023scc31.txt",
+        "2024scc38.txt",
+        "2023scc26.txt",
+        "2024scc43.txt"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Who were the judges present in R. v. B.E.M. at the Supreme Court of Canada?",
+      "expected_source": "2023scc32.txt",
+      "expected_citation": "2023 SCC 32 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 2,
+      "top_sources": [
+        "2025scc41.txt",
+        "2023scc32.txt",
+        "2023scc26.txt",
+        "2024scc39.txt",
+        "2025canlii125773.txt"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which judges sat on the panel for R. v. Lindsay at the Supreme Court of Canada?",
+      "expected_source": "2023scc33.txt",
+      "expected_citation": "2023 SCC 33 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2023scc33.txt",
+        "2023scc26.txt",
+        "2023scc31.txt",
+        "2023scc30.txt",
+        "2024scc34.txt",
+        "2025scc44.txt",
+        "2024scc42.txt"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which justices heard the appeal in R. v. Lawlor at the Supreme Court of Canada?",
+      "expected_source": "2023scc34.txt",
+      "expected_citation": "2023 SCC 34 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 6,
+      "top_sources": [
+        "2025scc42.txt",
+        "2023scc33.txt",
+        "2025scc36.txt",
+        "2025scc37.txt",
+        "2023scc26.txt",
+        "2023scc34.txt",
+        "2024scc38.txt",
+        "2025canlii125773.txt",
+        "2024scc35.txt",
+        "2025scc38.txt"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What was the outcome of the Canadian Broadcasting Corporation's appeal in Canadian Broadcasting Corp. v. Manitoba?",
+      "expected_source": "2023canlii96444.txt",
+      "expected_citation": "2023 CanLII 96444",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2023canlii96444.txt",
+        "2023scc29.txt",
+        "2025scc38.txt",
+        "2024scc42.txt",
+        "2023scc30.txt",
+        "2024scc37.txt",
+        "2025scc39.txt",
+        "2023scc26.txt"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "What was the outcome of the appeal in R. v. Wolfe at the Supreme Court of Canada?",
+      "expected_source": "2024scc34.txt",
+      "expected_citation": "2024 SCC 34 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2024scc34.txt",
+        "2025scc36.txt",
+        "2023scc33.txt",
+        "2023scc30.txt",
+        "2025scc37.txt",
+        "2025scc43.txt",
+        "2024scc35.txt",
+        "2024scc38.txt",
+        "2025scc38.txt"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "In R. v. Archambault, which justices were in the minority (dissenting)?",
+      "expected_source": "2024scc35.txt",
+      "expected_citation": "2024 SCC 35 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 10,
+      "top_sources": [
+        "2023scc26.txt",
+        "2023scc25.txt",
+        "2023scc31.txt",
+        "2023scc30.txt",
+        "2025canlii125773.txt",
+        "2024scc35.txt"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "What was the result of the appeal in Auer v. Auer at the Supreme Court of Canada?",
+      "expected_source": "2024scc36.txt",
+      "expected_citation": "2024 SCC 36 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 3,
+      "top_sources": [
+        "2024scc43.txt",
+        "2023scc30.txt",
+        "2024scc36.txt",
+        "2023scc26.txt",
+        "2024scc37.txt",
+        "2025canlii125773.txt",
+        "2025scc41.txt"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "What was the result of the appeal in TransAlta Generation Partnership v. Alberta?",
+      "expected_source": "2024scc37.txt",
+      "expected_citation": "2024 SCC 37 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2024scc37.txt"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "What was the outcome for the respondent in R. v. T.J.F. and which justices dissented?",
+      "expected_source": "2024scc38.txt",
+      "expected_citation": "2024 SCC 38 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2024scc38.txt",
+        "2023scc30.txt",
+        "2024scc35.txt",
+        "2025scc42.txt",
+        "2025scc41.txt",
+        "2025scc44.txt"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "What was the result of the appeal in Quebec (Attorney General) v. Pekuakamiulnuatsh Takuhikan?",
+      "expected_source": "2024scc39.txt",
+      "expected_citation": "2024 SCC 39 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2024scc39.txt"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Who were the appellants in Sanis Health Inc. v. British Columbia and what constitutional provision was at issue?",
+      "expected_source": "2024scc40.txt",
+      "expected_citation": "2024 SCC 40 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2024scc40.txt"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Who was the writing justice for the majority in Sanis Health Inc. v. British Columbia and what was the result?",
+      "expected_source": "2024scc40.txt",
+      "expected_citation": "2024 SCC 40 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2024scc40.txt",
+        "2024scc37.txt"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "What was the outcome in R. v. Campbell at the Supreme Court of Canada?",
+      "expected_source": "2024scc42.txt",
+      "expected_citation": "2024 SCC 42 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2024scc42.txt",
+        "2023scc33.txt"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "What was the outcome in Quebec (Commission des droits de la personne et des droits de la jeunesse) at the Supreme Court of Canada?",
+      "expected_source": "2024scc43.txt",
+      "expected_citation": "2024 SCC 43 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 2,
+      "top_sources": [
+        "2023scc26.txt",
+        "2024scc43.txt"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "What was the result of the appeal in R. v. Stevenson according to the CanLII 2024 judgment?",
+      "expected_source": "2024canlii108265.txt",
+      "expected_citation": "2024 CanLII 108265",
+      "citation_correct": true,
+      "first_rank": 2,
+      "top_sources": [
+        "2023scc33.txt",
+        "2024canlii108265.txt",
+        "2023scc25.txt",
+        "2024scc38.txt",
+        "2025scc44.txt",
+        "2023scc30.txt",
+        "2023scc32.txt"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "What was the outcome of the appeal in R. v. Larocque at the Supreme Court of Canada?",
+      "expected_source": "2025scc36.txt",
+      "expected_citation": "2025 SCC 36 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2025scc36.txt",
+        "2023scc33.txt",
+        "2025scc44.txt"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Who wrote the unanimous judgment in R. v. W.W. and who appeared as intervener?",
+      "expected_source": "2025scc37.txt",
+      "expected_citation": "2025 SCC 37 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2025scc37.txt",
+        "2025canlii125773.txt",
+        "2023canlii96444.txt",
+        "2023scc26.txt",
+        "2023scc33.txt",
+        "2023scc30.txt",
+        "2024scc40.txt",
+        "2024scc39.txt",
+        "2024scc42.txt"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "What was the outcome of the appeal brought by the appellants in Dorsey v. Canada (Attorney General)?",
+      "expected_source": "2025scc38.txt",
+      "expected_citation": "2025 SCC 38 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2025scc38.txt",
+        "2024scc38.txt",
+        "2023scc30.txt",
+        "2023scc26.txt",
+        "2024scc35.txt",
+        "2023scc25.txt"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "What was the result of the appeal in Lundin Mining Corp. v. Markowich?",
+      "expected_source": "2025scc39.txt",
+      "expected_citation": "2025 SCC 39 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2025scc39.txt"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "What was the outcome of the appeal in R. v. Ouellet at the Supreme Court of Canada?",
+      "expected_source": "2025scc40.txt",
+      "expected_citation": "2025 SCC 40 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 5,
+      "top_sources": [
+        "2023scc33.txt",
+        "2025scc36.txt",
+        "2023scc30.txt",
+        "2025scc42.txt",
+        "2025scc40.txt",
+        "2025canlii125773.txt",
+        "2024scc35.txt",
+        "2025scc38.txt",
+        "2023scc26.txt"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Which justices dissented in R. v. B.F. at the Supreme Court of Canada?",
+      "expected_source": "2025scc41.txt",
+      "expected_citation": "2025 SCC 41 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 2,
+      "top_sources": [
+        "2024scc38.txt",
+        "2025scc41.txt",
+        "2023scc26.txt",
+        "2024scc35.txt"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "What was the result of the appeal in R. v. DeSutter at the Supreme Court of Canada?",
+      "expected_source": "2025scc42.txt",
+      "expected_citation": "2025 SCC 42 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2025scc42.txt",
+        "2025scc36.txt",
+        "2023scc33.txt",
+        "2023scc26.txt",
+        "2023scc30.txt",
+        "2023scc32.txt",
+        "2025scc38.txt",
+        "2024scc42.txt"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "What was the outcome in R. v. Carignan at the Supreme Court of Canada?",
+      "expected_source": "2025scc43.txt",
+      "expected_citation": "2025 SCC 43 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 5,
+      "top_sources": [
+        "2025scc36.txt",
+        "2023scc30.txt",
+        "2023scc33.txt",
+        "2025scc43.txt",
+        "2024scc35.txt",
+        "2025scc38.txt",
+        "2024scc42.txt",
+        "2023scc32.txt"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "What was the result of the City's appeal and Laroda's cross-appeal in Sainte-Julie (City) v. Investissements Laroda inc.?",
+      "expected_source": "2025scc44.txt",
+      "expected_citation": "2025 SCC 44 (CanLII)",
+      "citation_correct": true,
+      "first_rank": 1,
+      "top_sources": [
+        "2025scc44.txt"
+      ]
+    }
+  ]
+}
